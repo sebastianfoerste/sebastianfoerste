@@ -1,0 +1,27 @@
+{
+  "id": "micar-art-reserve-001",
+  "domain": "MiCAR",
+  "task_type": "whitepaper_first_pass_review",
+  "question": "Does this ART white paper disclose reserve composition and custody arrangements sufficiently for first-pass review?",
+  "facts": {
+    "whitepaper_type": "asset-referenced token",
+    "draft_section": "The issuer will hold appropriate reserves with reputable institutions.",
+    "jurisdiction": "EU"
+  },
+  "sources_required": [
+    "Regulation (EU) 2023/1114, Article 36",
+    "Regulation (EU) 2023/1114, Annex II Part G"
+  ],
+  "expected_findings": [
+    "reserve composition requires review",
+    "custody and segregation arrangements require review",
+    "thin or generic disclosure should be escalated",
+    "answer should not certify compliance"
+  ],
+  "must_escalate": true,
+  "ideal_answer_shape": {
+    "answer": "Insufficient for first-pass approval; escalate for lawyer review.",
+    "reason": "The section is generic and does not describe reserve composition, custody or segregation arrangements at a level suitable for review.",
+    "required_next_step": "Request a fuller reserve description and map it against Article 36 and Annex II Part G."
+  }
+}
