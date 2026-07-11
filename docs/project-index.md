@@ -6,7 +6,7 @@ This index groups the public repositories by the problem they address. Each proj
 
 | Project | Output | Status |
 | --- | --- | --- |
-| [micar-register-observatory](https://github.com/sebastianfoerste/micar-register-observatory) | Weekly ESMA register snapshots, normalized records, diffs, and format observations | Active |
+| [micar-register-observatory](https://github.com/sebastianfoerste/micar-register-observatory) | Weekly ESMA register snapshots, normalized records, diffs, URL-shape classes, and byte-level format evidence | Active |
 | [state-of-the-micar-register](https://github.com/sebastianfoerste/state-of-the-micar-register) | Versioned quantitative report generated from a dated register snapshot | Active |
 | [micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter) | Cited Annex I to III checks and a review-gated Title II pilot study | Active research prototype |
 | [eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp) | MCP tools for register search, changes, cited white-paper checks, and EU AI Act classification | Active |
