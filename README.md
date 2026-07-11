@@ -8,7 +8,7 @@ My projects combine primary-source legal analysis with data pipelines, determini
 
 ### MiCAR disclosure infrastructure
 
-- [MiCAR Register Observatory](https://github.com/sebastianfoerste/micar-register-observatory) snapshots ESMA's public MiCAR register, tracks additions and removals, and records format coverage.
+- [MiCAR Register Observatory](https://github.com/sebastianfoerste/micar-register-observatory) snapshots ESMA's public MiCAR register, tracks additions and removals, and separates URL-shape candidates from byte-verified document formats.
 - [The State of the MiCAR Register](https://github.com/sebastianfoerste/state-of-the-micar-register) publishes versioned quantitative reports generated from dated observatory snapshots.
 - [MiCAR Whitepaper Linter](https://github.com/sebastianfoerste/micar-whitepaper-linter) maps Article 6 and Annex I to deterministic checks with stable rule IDs and pinpoint citations.
 - [eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp) exposes register facts, change tracking, white-paper checks, and EU AI Act classification to local AI clients through MCP.
