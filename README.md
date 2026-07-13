@@ -10,10 +10,10 @@ My projects combine primary-source legal analysis with data pipelines, determini
 
 - [MiCAR Register Observatory](https://github.com/sebastianfoerste/micar-register-observatory) snapshots ESMA's public MiCAR register, tracks additions and removals, and separates URL-shape candidates from byte-verified document formats.
 - [The State of the MiCAR Register](https://github.com/sebastianfoerste/state-of-the-micar-register) publishes versioned quantitative reports generated from dated observatory snapshots.
-- [MiCAR Whitepaper Linter](https://github.com/sebastianfoerste/micar-whitepaper-linter) maps Article 6 and Annex I to deterministic checks with stable rule IDs and pinpoint citations.
+- [MiCAR Whitepaper Linter](https://github.com/sebastianfoerste/micar-whitepaper-linter) maps Article 6 and Annexes I to III to deterministic checks with stable rule IDs and pinpoint citations.
 - [eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp) exposes register facts, change tracking, white-paper checks, and EU AI Act classification to local AI clients through MCP.
 
-The public white-paper study is a reproducible pilot. Its rule findings remain candidate gaps until human legal review is complete. The repositories distinguish register facts, extraction results, deterministic findings, and reviewed legal conclusions.
+The public white-paper study, implemented in [MiCAR Whitepaper Linter](https://github.com/sebastianfoerste/micar-whitepaper-linter), is a reproducible pilot. Its rule findings remain candidate gaps until human legal review is complete. The repositories distinguish register facts, extraction results, deterministic findings, and reviewed legal conclusions.
 
 ## Evaluation and supervised workflows
 
@@ -25,6 +25,8 @@ The public white-paper study is a reproducible pilot. Its rule findings remain c
 | [dpa-and-data-transfer-review](https://github.com/sebastianfoerste/dpa-and-data-transfer-review) | Applies cited GDPR Article 28 and Chapter V checks to structured DPA facts and returns a gated review packet. |
 | [MiCAR Authorization Co-Pilot](https://github.com/sebastianfoerste/MiCAR-Authorization-Co-Pilot) | Models source-backed, review-gated preparation of MiCAR authorisation and white-paper materials. |
 | [EU Financial Regulation Horizon Scanner](https://github.com/sebastianfoerste/eu-financial-reg-horizon-scanner) | Turns official regulatory publications into classified, reviewable product-impact records. |
+
+For a complete list of projects grouped by problem domain, see the [Project Index](docs/project-index.md).
 
 ## Engineering approach
 
