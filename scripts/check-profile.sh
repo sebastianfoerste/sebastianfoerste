@@ -87,6 +87,40 @@ if actual != expected:
     raise SystemExit(
         f"pinned repository manifest differs: expected {expected}, received {actual}"
     )
+if payload.get("verified_via") != "GitHub GraphQL":
+    raise SystemExit("pinned repository manifest lacks GraphQL verification metadata")
+if payload.get("live_pin_rotation_status") != "pending_manual_github_ui":
+    raise SystemExit("pinned repository manifest has an unexpected live pin state")
+pin_state = {
+    item["name"]: item.get("pinned_on_github")
+    for item in payload["repositories"]
+}
+expected_pin_state = {
+    "contract-review-eval-harness": True,
+    "legal-function-operating-system": True,
+    "cross-border-governance-os": False,
+    "eu-ai-act-classifier": False,
+    "ai-saas-legal-ops-starter-kit": True,
+    "legal-ops-agent": True,
+}
+if pin_state != expected_pin_state:
+    raise SystemExit(
+        f"pinned repository state differs: expected {expected_pin_state}, "
+        f"received {pin_state}"
+    )
+cross_border = next(
+    item
+    for item in payload["repositories"]
+    if item["name"] == "cross-border-governance-os"
+)
+required_urls = {
+    "live_demo_url",
+    "executive_brief_url",
+    "scenario_comparison_url",
+}
+missing_urls = sorted(required_urls - cross_border.keys())
+if missing_urls:
+    raise SystemExit(f"cross-border-governance-os lacks proof URLs: {missing_urls}")
 PY
 
 combined_front_door="$(mktemp)"

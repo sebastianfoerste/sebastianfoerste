@@ -1,36 +1,48 @@
 {
   "schema_version": "profile-pinned-repositories.v1",
-  "generated_from": "live GitHub pinned repositories",
+  "generated_from": "approved target pin order",
+  "verified_at": "2026-07-16",
+  "verified_via": "GitHub GraphQL",
+  "live_pin_rotation_status": "pending_manual_github_ui",
   "repositories": [
     {
       "name": "contract-review-eval-harness",
       "url": "https://github.com/sebastianfoerste/contract-review-eval-harness",
-      "layer": "Evaluation"
+      "layer": "Evaluation",
+      "pinned_on_github": true
     },
     {
       "name": "legal-function-operating-system",
       "url": "https://github.com/sebastianfoerste/legal-function-operating-system",
-      "layer": "Legal operating layer"
+      "layer": "Legal operating layer",
+      "pinned_on_github": true
     },
     {
       "name": "cross-border-governance-os",
       "url": "https://github.com/sebastianfoerste/cross-border-governance-os",
-      "layer": "Cross-border governance"
+      "layer": "Cross-border governance",
+      "live_demo_url": "https://sebastianfoerste.github.io/cross-border-governance-os/",
+      "executive_brief_url": "https://github.com/sebastianfoerste/cross-border-governance-os/blob/main/examples/executive-brief.md",
+      "scenario_comparison_url": "https://github.com/sebastianfoerste/cross-border-governance-os/blob/main/examples/scenario-comparison.md",
+      "pinned_on_github": false
     },
     {
       "name": "eu-ai-act-classifier",
       "url": "https://github.com/sebastianfoerste/eu-ai-act-classifier",
-      "layer": "AI governance"
+      "layer": "AI governance",
+      "pinned_on_github": false
     },
     {
       "name": "ai-saas-legal-ops-starter-kit",
       "url": "https://github.com/sebastianfoerste/ai-saas-legal-ops-starter-kit",
-      "layer": "Legal operating layer"
+      "layer": "Legal operating layer",
+      "pinned_on_github": true
     },
     {
       "name": "legal-ops-agent",
       "url": "https://github.com/sebastianfoerste/legal-ops-agent",
-      "layer": "Supervised workflow"
+      "layer": "Supervised workflow",
+      "pinned_on_github": true
     }
   ]
 }

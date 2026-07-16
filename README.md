@@ -33,9 +33,16 @@ For a complete list of projects grouped by problem domain, see the [Project Inde
 | Management question | Public proof |
 | --- | --- |
 | Can a cross-border robotics transaction be signed, deployed, and recognized consistently by Legal and Finance? | [legal-function-operating-system](https://github.com/sebastianfoerste/legal-function-operating-system) |
-| Can the Germany-US group operate, delegate authority, hire, bill intercompany, transfer employee data, and prepare for financing? | [cross-border-governance-os](https://github.com/sebastianfoerste/cross-border-governance-os) |
+| Can the Germany-US group operate, delegate authority, hire, bill intercompany, transfer employee data, and prepare for financing? | [Cross-Border Governance OS](https://github.com/sebastianfoerste/cross-border-governance-os) and its [live control room](https://sebastianfoerste.github.io/cross-border-governance-os/) |
 | How is automated contract review measured for clause coverage, risk labels, citation grounding, and unsupported claims? | [contract-review-eval-harness](https://github.com/sebastianfoerste/contract-review-eval-harness) |
 | How are EU AI Act classifications, obligations, timelines, and unresolved product facts kept reviewable? | [eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier) |
+
+The cross-border replay moves a synthetic US enterprise contract from blocked
+at Day 0 to human approval required at Day 30. The approval-ready state clears
+the remaining evidence blockers while execution stays disabled and named human
+approvals remain required. Review the [one-minute executive brief](https://github.com/sebastianfoerste/cross-border-governance-os/blob/main/examples/executive-brief.md)
+and [scenario comparison](https://github.com/sebastianfoerste/cross-border-governance-os/blob/main/examples/scenario-comparison.md)
+before opening the detailed decision pack.
 
 The route uses synthetic data, deterministic checks, source provenance, and
 human review gates. It covers commercial execution, corporate governance,
