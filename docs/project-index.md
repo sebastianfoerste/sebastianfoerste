@@ -25,6 +25,7 @@ This index groups the public repositories by the problem they address. Each proj
 | [legal-ops-agent](https://github.com/sebastianfoerste/legal-ops-agent) | Typed matter assessment, reviewer routing, audit chain, and approval-gated export | Deterministic CLI and tests |
 | [ai-saas-legal-ops-starter-kit](https://github.com/sebastianfoerste/ai-saas-legal-ops-starter-kit) | Structured intake, policy checks, and launch-governance reports | Synthetic matter fixtures and tests |
 | [legal-function-operating-system](https://github.com/sebastianfoerste/legal-function-operating-system) | Routing, service levels, approvals, escalations, and operating reports | Deterministic sample runs |
+| [cross-border-governance-os](https://github.com/sebastianfoerste/cross-border-governance-os) | Germany-US entity, authority, employment, intercompany, privacy, and financing-readiness controls | Synthetic expansion fixture, deterministic proof artifacts, and tests |
 | [legal-ai-workshop-kit](https://github.com/sebastianfoerste/legal-ai-workshop-kit) | Workshop and workflow-discovery materials | Public-safe examples |
 
 ## Cited regulatory checks

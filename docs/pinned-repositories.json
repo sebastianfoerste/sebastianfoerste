@@ -13,19 +13,19 @@
       "layer": "Legal operating layer"
     },
     {
+      "name": "cross-border-governance-os",
+      "url": "https://github.com/sebastianfoerste/cross-border-governance-os",
+      "layer": "Cross-border governance"
+    },
+    {
+      "name": "eu-ai-act-classifier",
+      "url": "https://github.com/sebastianfoerste/eu-ai-act-classifier",
+      "layer": "AI governance"
+    },
+    {
       "name": "ai-saas-legal-ops-starter-kit",
       "url": "https://github.com/sebastianfoerste/ai-saas-legal-ops-starter-kit",
       "layer": "Legal operating layer"
-    },
-    {
-      "name": "legal-ai-adoption-dashboard",
-      "url": "https://github.com/sebastianfoerste/legal-ai-adoption-dashboard",
-      "layer": "Adoption"
-    },
-    {
-      "name": "legal-ai-workshop-kit",
-      "url": "https://github.com/sebastianfoerste/legal-ai-workshop-kit",
-      "layer": "Adoption"
     },
     {
       "name": "legal-ops-agent",

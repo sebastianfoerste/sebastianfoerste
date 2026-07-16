@@ -28,6 +28,20 @@ The public white-paper study, implemented in [MiCAR Whitepaper Linter](https://g
 
 For a complete list of projects grouped by problem domain, see the [Project Index](docs/project-index.md).
 
+## Industrial robotics General Counsel reviewer route
+
+| Management question | Public proof |
+| --- | --- |
+| Can a cross-border robotics transaction be signed, deployed, and recognized consistently by Legal and Finance? | [legal-function-operating-system](https://github.com/sebastianfoerste/legal-function-operating-system) |
+| Can the Germany-US group operate, delegate authority, hire, bill intercompany, transfer employee data, and prepare for financing? | [cross-border-governance-os](https://github.com/sebastianfoerste/cross-border-governance-os) |
+| How is automated contract review measured for clause coverage, risk labels, citation grounding, and unsupported claims? | [contract-review-eval-harness](https://github.com/sebastianfoerste/contract-review-eval-harness) |
+| How are EU AI Act classifications, obligations, timelines, and unresolved product facts kept reviewable? | [eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier) |
+
+The route uses synthetic data, deterministic checks, source provenance, and
+human review gates. It covers commercial execution, corporate governance,
+employment readiness, privacy, AI governance, and quality assurance without
+automating signature, filing, approval, or final legal conclusions.
+
 ## Engineering approach
 
 - Cite primary law and preserve source status.

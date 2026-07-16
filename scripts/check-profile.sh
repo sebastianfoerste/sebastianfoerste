@@ -9,11 +9,9 @@ front_door_files=(
 flagship_repos=(
   "contract-review-eval-harness"
   "legal-ops-agent"
-  "legal-ai-adoption-dashboard"
-  "legal-ai-workshop-kit"
-  "ai-saas-legal-ops-starter-kit"
   "dpa-and-data-transfer-review"
   "legal-function-operating-system"
+  "cross-border-governance-os"
   "eu-ai-act-classifier"
   "MiCAR-Authorization-Co-Pilot"
   "eu-financial-reg-horizon-scanner"
@@ -70,6 +68,26 @@ fi
 for repo in "${flagship_repos[@]}"; do
   grep -q -- "$repo" README.md || fail "README missing flagship repo: $repo"
 done
+
+python3 - <<'PY'
+import json
+from pathlib import Path
+
+expected = [
+    "contract-review-eval-harness",
+    "legal-function-operating-system",
+    "cross-border-governance-os",
+    "eu-ai-act-classifier",
+    "ai-saas-legal-ops-starter-kit",
+    "legal-ops-agent",
+]
+payload = json.loads(Path("docs/pinned-repositories.json").read_text())
+actual = [item["name"] for item in payload["repositories"]]
+if actual != expected:
+    raise SystemExit(
+        f"pinned repository manifest differs: expected {expected}, received {actual}"
+    )
+PY
 
 combined_front_door="$(mktemp)"
 trap 'rm -f "$combined_front_door"' EXIT
