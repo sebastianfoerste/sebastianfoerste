@@ -8,11 +8,6 @@
       "layer": "Legal operating layer"
     },
     {
-      "name": "ai-saas-legal-ops-starter-kit",
-      "url": "https://github.com/sebastianfoerste/ai-saas-legal-ops-starter-kit",
-      "layer": "Legal operating layer"
-    },
-    {
       "name": "contract-review-eval-harness",
       "url": "https://github.com/sebastianfoerste/contract-review-eval-harness",
       "layer": "Evaluation"
@@ -21,6 +16,11 @@
       "name": "legal-ops-agent",
       "url": "https://github.com/sebastianfoerste/legal-ops-agent",
       "layer": "Supervised workflow"
+    },
+    {
+      "name": "dpa-and-data-transfer-review",
+      "url": "https://github.com/sebastianfoerste/dpa-and-data-transfer-review",
+      "layer": "Privacy and data transfers"
     }
   ]
 }

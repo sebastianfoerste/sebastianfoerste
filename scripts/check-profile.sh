@@ -8,9 +8,9 @@ front_door_files=(
 
 flagship_repos=(
   "legal-function-operating-system"
-  "ai-saas-legal-ops-starter-kit"
   "contract-review-eval-harness"
   "legal-ops-agent"
+  "dpa-and-data-transfer-review"
 )
 
 required_terms=(
@@ -65,6 +65,14 @@ fi
 for repo in "${flagship_repos[@]}"; do
   grep -q -- "$repo" README.md || fail "README missing flagship repo: $repo"
 done
+
+if [[ "${CHECK_LIVE_GITHUB_VISIBILITY:-0}" == "1" ]]; then
+  command -v gh >/dev/null || fail "gh is required for live visibility checks"
+  for repo in "${flagship_repos[@]}"; do
+    visibility="$(gh api "repos/sebastianfoerste/$repo" --jq '.visibility')"
+    [[ "$visibility" == "public" ]] || fail "flagship repo is not public: $repo"
+  done
+fi
 
 combined_front_door="$(mktemp)"
 trap 'rm -f "$combined_front_door"' EXIT
