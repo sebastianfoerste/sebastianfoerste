@@ -4,13 +4,13 @@ I build **review-gated legal AI systems**: evaluation harnesses, supervised work
 
 German-qualified lawyer, former NLP data scientist, and partner at gunnercooke. My work sits between legal engineering, product engineering, and AI governance: structured intake, deterministic checks, visible source provenance, human-approved outputs, and audit trails.
 
-European by practice and language: I work across EU regulation, MiCAR, the EU AI Act, DORA, and GDPR, and across German (native), English (fluent), and French (working). The regulatory checks below cite primary EU law: the MiCAR whitepaper linter encodes 35 disclosure rules across Annexes I, II and III with stable rule IDs and pinpoint citations, and the EU AI Act classifier runs statutory gates from Art. 5 prohibitions through GPAI obligations.
+I work across EU regulation, MiCAR, the EU AI Act, DORA, and GDPR. The regulatory checks below cite primary EU law: the MiCAR whitepaper linter encodes 35 disclosure rules across Annexes I, II and III with stable rule IDs and pinpoint citations, and the EU AI Act classifier runs statutory gates from Art. 5 EU AI Act prohibitions through GPAI obligations.
 
 These are public-safe prototypes on synthetic data only. 
 
 ## Start here
 
-If you look at one repository, look at **[`contract-review-eval-harness`](https://github.com/sebastianfoerste/contract-review-eval-harness)**: an offline, deterministic evaluation harness for AI contract review. It scores model output against a hand-authored answer set and catches the failures lawyers actually care about: **missed clauses, wrong risk severity, unsupported citations, and fabricated text.**
+If you look at one repository, look at **[`contract-review-eval-harness`](https://github.com/sebastianfoerste/contract-review-eval-harness)**: an offline, deterministic evaluation harness for AI contract review. It scores model output against a hand-authored answer set and catches **missed clauses, wrong risk severity, unsupported citations, and fabricated text.**
 
 ```bash
 git clone https://github.com/sebastianfoerste/contract-review-eval-harness
