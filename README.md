@@ -27,9 +27,9 @@ In the sample run it catches a fabricated citation and marks the output for reje
 | --- | --- | --- |
 | **Evaluation** | How do we know the legal AI output is any good? | `contract-review-eval-harness` |
 | **Supervised workflow** | How do we keep agentic legal work accountable? | `legal-ops-agent` |
-| **Legal operating layer** | How does a GC scale intake, routing, approvals, and reporting? | `ai-saas-legal-ops-starter-kit`, `legal-function-operating-system` |
-| **Privacy and domain checks** | Can regulation become cited, reviewable first-pass checks? | `dpa-and-data-transfer-review`, `eu-ai-act-classifier`, `micar-whitepaper-linter`, `MiCAR-Authorization-Co-Pilot`, `eu-financial-reg-horizon-scanner`, `dora-third-party-register-and-resilience-workbench` |
-| **Adoption** | How does legal AI move from demo to daily use? | `legal-ai-adoption-dashboard`, `legal-ai-workshop-kit` |
+| **Legal operating layer** | How does a GC scale intake, routing, approvals, and reporting? | `legal-function-operating-system` |
+| **Privacy and domain checks** | Can regulation become cited, reviewable first-pass checks? | `dpa-and-data-transfer-review`, `eu-ai-act-classifier`, `micar-whitepaper-linter`, `eu-financial-reg-horizon-scanner`, `dora-third-party-register-and-resilience-workbench` |
+| **Adoption** | How does legal AI move from demo to daily use? | `legal-ai-adoption-dashboard` |
 
 ## How I think about legal AI
 
