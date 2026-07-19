@@ -7,24 +7,19 @@ front_door_files=(
 )
 
 flagship_repos=(
+  "legal-function-operating-system"
+  "ai-saas-legal-ops-starter-kit"
   "contract-review-eval-harness"
   "legal-ops-agent"
-  "legal-ai-adoption-dashboard"
-  "legal-ai-workshop-kit"
-  "ai-saas-legal-ops-starter-kit"
-  "dpa-and-data-transfer-review"
-  "legal-function-operating-system"
-  "eu-ai-act-classifier"
-  "MiCAR-Authorization-Co-Pilot"
-  "eu-financial-reg-horizon-scanner"
 )
 
 required_terms=(
   "synthetic"
-  "review gate"
+  "human review"
   "source provenance"
   "audit"
   "not legal advice"
+  "production deployment"
 )
 
 reject_patterns=(
