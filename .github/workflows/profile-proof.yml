@@ -1,0 +1,24 @@
+name: Profile proof
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Verify profile and public flagship repositories
+        env:
+          CHECK_LIVE_GITHUB_VISIBILITY: "1"
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/check-profile.sh
+      - name: Validate pinned repository manifest
+        run: python3 -m json.tool docs/pinned-repositories.json >/dev/null

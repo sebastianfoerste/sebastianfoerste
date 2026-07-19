@@ -1,36 +1,26 @@
 {
   "schema_version": "profile-pinned-repositories.v1",
-  "generated_from": "live GitHub pinned repositories",
+  "generated_from": "target GitHub pinned repositories",
   "repositories": [
-    {
-      "name": "contract-review-eval-harness",
-      "url": "https://github.com/sebastianfoerste/contract-review-eval-harness",
-      "layer": "Evaluation"
-    },
     {
       "name": "legal-function-operating-system",
       "url": "https://github.com/sebastianfoerste/legal-function-operating-system",
       "layer": "Legal operating layer"
     },
     {
-      "name": "ai-saas-legal-ops-starter-kit",
-      "url": "https://github.com/sebastianfoerste/ai-saas-legal-ops-starter-kit",
-      "layer": "Legal operating layer"
-    },
-    {
-      "name": "legal-ai-adoption-dashboard",
-      "url": "https://github.com/sebastianfoerste/legal-ai-adoption-dashboard",
-      "layer": "Adoption"
-    },
-    {
-      "name": "legal-ai-workshop-kit",
-      "url": "https://github.com/sebastianfoerste/legal-ai-workshop-kit",
-      "layer": "Adoption"
+      "name": "contract-review-eval-harness",
+      "url": "https://github.com/sebastianfoerste/contract-review-eval-harness",
+      "layer": "Evaluation"
     },
     {
       "name": "legal-ops-agent",
       "url": "https://github.com/sebastianfoerste/legal-ops-agent",
       "layer": "Supervised workflow"
+    },
+    {
+      "name": "dpa-and-data-transfer-review",
+      "url": "https://github.com/sebastianfoerste/dpa-and-data-transfer-review",
+      "layer": "Privacy and data transfers"
     }
   ]
 }

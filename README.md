@@ -1,43 +1,31 @@
 # Sebastian Förste
 
-I build **review-gated legal AI systems**: evaluation harnesses, supervised workflows, and legal operating layers that make outputs cited, testable, and safe for human approval.
+I build lean, review-gated legal operating systems for scaling technology companies.
 
-German-qualified lawyer, former NLP data scientist, and partner at gunnercooke. My work sits between legal engineering, product engineering, and AI governance: structured intake, deterministic checks, visible source provenance, human-approved outputs, and audit trails.
+I am a German-qualified lawyer, partner at gunnercooke, former founder and managing director, and former NLP data scientist. My legal practice covers technology transactions, AI and SaaS, crypto, capital markets, payments, and EU financial regulation. The repositories below show how I structure recurring legal work through clear intake, risk triage, approval paths, source provenance, human review, and audit trails.
 
-I work across EU regulation, MiCAR, the EU AI Act, DORA, and GDPR. The regulatory checks below cite primary EU law: the MiCAR whitepaper linter encodes 35 disclosure rules across Annexes I, II and III with stable rule IDs and pinpoint citations, and the EU AI Act classifier runs statutory gates from Art. 5 EU AI Act prohibitions through GPAI obligations.
+The code is evidence of legal and operating judgment. My work remains centred on contracts, executive advice, governance, regulated products, and the design of a legal function that can scale with the business.
 
-These are public-safe prototypes on synthetic data only. 
+All public examples use synthetic data. They are reviewable prototypes rather than claims of production deployment. AI tools assisted implementation; the legal taxonomies, escalation logic, approval models, answer sets, and scope limits reflect my judgment. No repository provides legal advice or permits consequential external action without human approval.
 
-## Start here
+## Four-repository reviewer path
 
-If you look at one repository, look at **[`contract-review-eval-harness`](https://github.com/sebastianfoerste/contract-review-eval-harness)**: an offline, deterministic evaluation harness for AI contract review. It scores model output against a hand-authored answer set and catches **missed clauses, wrong risk severity, unsupported citations, and fabricated text.**
-
-```bash
-git clone https://github.com/sebastianfoerste/contract-review-eval-harness
-cd contract-review-eval-harness && make install && make test && make demo
-```
-
-![Contract-review eval scorecard: the harness catches a fabricated citation and gates the output](docs/scorecard.svg)
-
-In the sample run it catches a fabricated citation and marks the output for rejection. The thesis: **legal AI quality should be measured, not asserted.** A second idea runs alongside it: legal AI becomes useful when judgment is *structured before* the model acts, *measured after* it acts, and *blocked until* a human approves consequential use.
-
-## Portfolio map
-
-| Layer | The question it answers | Repository |
+| Start with | What it demonstrates | Review path |
 | --- | --- | --- |
-| **Evaluation** | How do we know the legal AI output is any good? | `contract-review-eval-harness` |
-| **Supervised workflow** | How do we keep agentic legal work accountable? | `legal-ops-agent` |
-| **Legal operating layer** | How does a GC scale intake, routing, approvals, and reporting? | `legal-function-operating-system` |
-| **Privacy and domain checks** | Can regulation become cited, reviewable first-pass checks? | `dpa-and-data-transfer-review`, `eu-ai-act-classifier`, `micar-whitepaper-linter`, `eu-financial-reg-horizon-scanner`, `dora-third-party-register-and-resilience-workbench` |
-| **Adoption** | How does legal AI move from demo to daily use? | `legal-ai-adoption-dashboard` |
+| **[`legal-function-operating-system`](https://github.com/sebastianfoerste/legal-function-operating-system)** | A first-GC operating model for intake, risk, priority, routing, SLAs, approvals, external counsel, escalation, and board reporting | Read the [case study](https://github.com/sebastianfoerste/legal-function-operating-system/blob/main/CASE_STUDY.md), then inspect the [synthetic board pack](https://github.com/sebastianfoerste/legal-function-operating-system/blob/main/examples/board-pack.md) |
+| **[`contract-review-eval-harness`](https://github.com/sebastianfoerste/contract-review-eval-harness)** | Deterministic measurement of clause coverage, risk severity, citation grounding, and fabricated text | Read the [case study](https://github.com/sebastianfoerste/contract-review-eval-harness/blob/main/CASE_STUDY.md), then inspect the [sample scorecard](https://github.com/sebastianfoerste/contract-review-eval-harness/blob/main/examples/scorecard.md) |
+| **[`legal-ops-agent`](https://github.com/sebastianfoerste/legal-ops-agent)** | Typed intake, deterministic triage, reviewer routing, blocked export, source checks, and an auditable human approval | Read the [case study](https://github.com/sebastianfoerste/legal-ops-agent/blob/main/CASE_STUDY.md), then inspect the [trust cockpit](https://github.com/sebastianfoerste/legal-ops-agent/blob/main/examples/trust-cockpit-saas-msa-2026-06-30.md) |
+| **[`dpa-and-data-transfer-review`](https://github.com/sebastianfoerste/dpa-and-data-transfer-review)** | Cited GDPR Article 28 and Chapter V checks with a visible review state and a gating exit code | Read the [project explanation](https://github.com/sebastianfoerste/dpa-and-data-transfer-review/blob/main/README.md), then inspect the [synthetic review packet](https://github.com/sebastianfoerste/dpa-and-data-transfer-review/blob/main/examples/review-packet.md) |
 
-## How I think about legal AI
+## What the portfolio establishes
 
-Useful legal AI starts with controlled legal work. The questions I build around: is intake structured before drafting begins? Are assumptions, sources, and gaps visible? Can a user see what is draft, checked, approved, or blocked? Can quality be tested before it is asserted? Can the workflow make a lawyer faster while preserving judgment? That is why these projects lean on deterministic checks, evaluation scripts, explicit review states, blocked exports, audit trails and structured prompts.
+These projects make legal operating choices inspectable. A reviewer can see the risk bands, routing rules, approval matrix, external-counsel triggers, evaluation criteria, source boundaries, failure states, tests, and known limitations.
+
+They also make the deployment boundary explicit. The public versions have no live company intake, production identity system, operational approval enforcement, or real client data. A production implementation would require company-specific playbooks, access controls, integrations, monitoring, and accountable legal ownership.
 
 ## Background
 
-Partner at gunnercooke in Germany, advising on AI, SaaS, crypto, capital markets, payments, and EU financial regulation. German-qualified lawyer, admitted 2012; trained at Hengeler Mueller, Freshfields Bruckhaus Deringer, and Cleary Gottlieb. Earlier, data scientist at Dudenverlag building Python NLP pipelines.
+Partner at gunnercooke in Germany. German-qualified lawyer, admitted in 2012. Trained at Hengeler Mueller, Freshfields Bruckhaus Deringer, and Cleary Gottlieb. Earlier, I built Python NLP pipelines as a data scientist at Dudenverlag.
 
 ## Contact
 
