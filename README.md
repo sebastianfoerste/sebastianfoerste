@@ -39,8 +39,6 @@ Useful legal AI starts with controlled legal work. The questions I build around:
 
 Partner at gunnercooke in Germany, advising on AI, SaaS, crypto, capital markets, payments, and EU financial regulation. German-qualified lawyer, admitted 2012; trained at Hengeler Mueller, Freshfields Bruckhaus Deringer, and Cleary Gottlieb. Earlier, data scientist at Dudenverlag building Python NLP pipelines.
 
-Languages: German (native), English (fluent), French (professional working knowledge), Swedish (professional working knowledge).
-
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/sebastianfoerste)
