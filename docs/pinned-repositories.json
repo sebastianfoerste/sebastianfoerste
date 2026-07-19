@@ -3,11 +3,6 @@
   "generated_from": "target GitHub pinned repositories",
   "repositories": [
     {
-      "name": "contract-review-eval-harness",
-      "url": "https://github.com/sebastianfoerste/contract-review-eval-harness",
-      "layer": "Evaluation"
-    },
-    {
       "name": "legal-function-operating-system",
       "url": "https://github.com/sebastianfoerste/legal-function-operating-system",
       "layer": "Legal operating layer"
@@ -16,6 +11,11 @@
       "name": "ai-saas-legal-ops-starter-kit",
       "url": "https://github.com/sebastianfoerste/ai-saas-legal-ops-starter-kit",
       "layer": "Legal operating layer"
+    },
+    {
+      "name": "contract-review-eval-harness",
+      "url": "https://github.com/sebastianfoerste/contract-review-eval-harness",
+      "layer": "Evaluation"
     },
     {
       "name": "legal-ops-agent",
