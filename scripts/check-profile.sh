@@ -134,7 +134,7 @@ fi
 if [[ -f docs/portfolio-claim-ledger.md ]]; then
   pass "claim ledger present"
   # Match a disposition cell, not the legend that lists the vocabulary.
-  if grep -qE '\|[[:space:]]*(PENDING|RETRACTED)[[:space:]]*\|' docs/portfolio-claim-ledger.md; then
+  if grep -qE '\|[[:space:]]*(PENDING|RETRACTED)\b' docs/portfolio-claim-ledger.md; then
     fail "claim ledger has an unresolved PENDING or RETRACTED disposition"
   else
     pass "no unresolved ledger dispositions"
