@@ -1,33 +1,33 @@
 # Sebastian Förste
 
-I build lean, review-gated legal operating systems for scaling technology companies.
+German-qualified lawyer, partner at gunnercooke, former NLP data scientist. I practise EU financial regulation: MiCAR, MiFID II, PSD2, DORA, and the AI Act where it reaches financial services. The repositories below turn that practice into deterministic, cited, testable tools. Every rule maps to a provision, and every finding carries its source status and a human-review boundary.
 
-I am a German-qualified lawyer, partner at gunnercooke, former founder and managing director, and former NLP data scientist. My legal practice covers technology transactions, AI and SaaS, crypto, capital markets, payments, and EU financial regulation. The repositories below show how I structure recurring legal work through clear intake, risk triage, approval paths, source provenance, human review, and audit trails.
+## Start here
 
-The code is evidence of legal and operating judgment. My work remains centred on contracts, executive advice, governance, regulated products, and the design of a legal function that can scale with the business.
+**[micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)** checks a crypto-asset white paper draft against Annex I to III of MiCAR and reports each gap with a pinpoint citation.
 
-All public examples use synthetic data. They are reviewable prototypes rather than claims of production deployment. AI tools assisted implementation; the legal taxonomies, escalation logic, approval models, answer sets, and scope limits reflect my judgment. No repository provides legal advice or permits consequential external action without human approval.
+- Try it in the browser, no install: [playground](https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/)
+- Run it locally in three minutes: clone the repository, then `make install && make test && make demo`
+- Wire it into CI with the GitHub Action (`@v1`), or start from the [template repository](https://github.com/sebastianfoerste/micar-whitepaper-template)
 
-## Three-repository reviewer path
+Rules fail closed. A draft format cannot pass the XHTML and Inline XBRL notification check, and the reserve deposit floor under Art. 36(4)(d) MiCAR stays in review until a lawyer has characterised significance and the referenced currency.
 
-| Start with | What it demonstrates | Review path |
-| --- | --- | --- |
-| **[`legal-function-operating-system`](https://github.com/sebastianfoerste/legal-function-operating-system)** | A first-GC operating model for intake, risk, priority, routing, SLAs, approvals, external counsel, escalation, and board reporting, with the supervised legal-operations agent maintained behind a versioned control contract | Read the [case study](https://github.com/sebastianfoerste/legal-function-operating-system/blob/main/CASE_STUDY.md), then inspect the [synthetic board pack](https://github.com/sebastianfoerste/legal-function-operating-system/blob/main/examples/board-pack.md) and the [shared control contract](https://github.com/sebastianfoerste/legal-function-operating-system/blob/main/contracts/README.md) |
-| **[`contract-review-eval-harness`](https://github.com/sebastianfoerste/contract-review-eval-harness)** | Deterministic measurement of clause coverage, risk severity, citation grounding, and fabricated text, under an adversarial campaign the baseline adapter fails | Read the [case study](https://github.com/sebastianfoerste/contract-review-eval-harness/blob/main/CASE_STUDY.md), then inspect the [sample scorecard](https://github.com/sebastianfoerste/contract-review-eval-harness/blob/main/examples/scorecard.md) and the [adversarial robustness report](https://github.com/sebastianfoerste/contract-review-eval-harness/blob/main/examples/adversarial-robustness-report.md) |
-| **[`dpa-and-data-transfer-review`](https://github.com/sebastianfoerste/dpa-and-data-transfer-review)** | Cited GDPR Article 28 and Chapter V checks with a visible review state and a gating exit code | Read the [project explanation](https://github.com/sebastianfoerste/dpa-and-data-transfer-review/blob/main/README.md), then inspect the [synthetic review packet](https://github.com/sebastianfoerste/dpa-and-data-transfer-review/blob/main/examples/review-packet.md) |
+## Supporting proofs
 
-The supervised legal-operations agent formerly published as `legal-ops-agent` is now maintained inside the legal function operating system as its `supervised-agent` component. That repository is archived and points to the consolidated one.
+- **[legal-function-operating-system](https://github.com/sebastianfoerste/legal-function-operating-system)**: an operating model for legal intake, risk bands, routing, SLAs, approvals, and board reporting, with a supervised agent held behind a versioned control contract.
+- **[contract-review-eval-harness](https://github.com/sebastianfoerste/contract-review-eval-harness)**: deterministic scoring of AI contract review against hand-authored answer sets, including an adversarial campaign the baseline adapter fails.
 
-## What the portfolio establishes
+## Specialist tools
 
-These projects make legal operating choices inspectable. A reviewer can see the risk bands, routing rules, approval matrix, external-counsel triggers, evaluation criteria, source boundaries, failure states, tests, and known limitations.
+- **[eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier)**: AI Act risk-tier triage with cited obligations, current under Regulation (EU) 2026/1744.
+- **[dpa-and-data-transfer-review](https://github.com/sebastianfoerste/dpa-and-data-transfer-review)**: cited GDPR Art. 28 and Chapter V checks with a visible review state.
 
-They also make the deployment boundary explicit. The public versions have no live company intake, production identity system, operational approval enforcement, or real client data. A production implementation would require company-specific playbooks, access controls, integrations, monitoring, and accountable legal ownership.
+## Boundaries
+
+All examples are synthetic. These are reviewable prototypes with source provenance and audit trails, not claims of production deployment. This is not legal advice, and no tool permits consequential external action without human review. AI assisted the implementation; the rule taxonomies, citations, and scope limits are my judgment.
 
 ## Background
 
-Partner at gunnercooke in Germany. German-qualified lawyer, admitted in 2012. Trained at Hengeler Mueller, Freshfields Bruckhaus Deringer, and Cleary Gottlieb. Earlier, I built Python NLP pipelines as a data scientist at Dudenverlag.
-
-## Contact
+Admitted in Germany in 2012. Trained at Hengeler Mueller, Freshfields Bruckhaus Deringer, and Cleary Gottlieb. Earlier, Python NLP pipelines as a data scientist at Dudenverlag.
 
 [LinkedIn](https://www.linkedin.com/in/sebastianfoerste)
