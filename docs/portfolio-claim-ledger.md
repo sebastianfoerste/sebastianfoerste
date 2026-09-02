@@ -32,8 +32,8 @@ Local: linter and classifier both on `codex/hybrid-consolidation-2026-08-26` (pr
 | 8 | Classifier test suite | 97 tests pass | local, same branch | 2026-09-01 | VERIFIED |
 | 9 | "35 rules" | linter README / list entries | 35 distinct rule IDs (29 Annex + 6 cross-cutting) | 2026-08-31 | VERIFIED (wording: say "rule IDs") |
 | 10 | Playground live | sebastianfoerste.github.io/micar-whitepaper-linter/playground/ | HTTP 200 | 2026-08-31 | VERIFIED |
-| 11 | Cockpit screenshots `docs/cockpit.png` and `docs/demo.png` | classifier main after #4 | Both still showed "provisional political agreement" and 2026-08 due dates | 2026-09-02 | RETRACTED → regenerated in classifier PR #5 (unmerged) |
-| 12 | Repository homepage implies a working hosted cockpit | eu-ai-act-classifier homepage → web-opal-chi-38.vercel.app | Vercel cannot spawn the python backend; page stays at "Classifying", 0 registry entries | 2026-09-02 | PENDING → owner decision: clear or repoint the homepage field |
+| 11 | Cockpit screenshots `docs/cockpit.png` and `docs/demo.png` | classifier main after #4 | Both still showed "provisional political agreement" and 2026-08 due dates | 2026-09-02 | CORRECTED → merged, classifier main `2866607` (2026-09-02) |
+| 12 | Repository homepage implies a working hosted cockpit | eu-ai-act-classifier homepage → web-opal-chi-38.vercel.app | Vercel cannot spawn the python backend; page stays at "Classifying", 0 registry entries | 2026-09-02 | CORRECTED → homepage field cleared; README and DEPLOYMENT.md now state there is no working hosted deployment, classifier main `acbce21` (2026-09-02) |
 
 ## Open PRs to reconcile
 
@@ -54,8 +54,13 @@ on public main.
 | [classifier #4](https://github.com/sebastianfoerste/eu-ai-act-classifier/pull/4) | AI Act timeline correction + demo artifacts | ruff check + format, 97 tests, source URLs, web build | **merged** `066cb09` |
 | [linter #9](https://github.com/sebastianfoerste/micar-whitepaper-linter/pull/9) | fail-closed iXBRL gate; reserve rule split | 96 tests, ruff; CI 3.13 + 3.14 | **merged** `f30629f` |
 | [dpa #3](https://github.com/sebastianfoerste/dpa-and-data-transfer-review/pull/3) | MIT licence consistency + assertion test | 14 tests (`make test`) | **merged** `c7b182e` |
-| [classifier #5](https://github.com/sebastianfoerste/eu-ai-act-classifier/pull/5) | regenerated cockpit screenshots from merged main | DOM-verified before capture | open, unmerged |
+| [classifier #5](https://github.com/sebastianfoerste/eu-ai-act-classifier/pull/5) | regenerated cockpit screenshots from merged main | DOM-verified before capture | **merged** `2866607` |
+| [classifier #6](https://github.com/sebastianfoerste/eu-ai-act-classifier/pull/6) | hosted-cockpit claim corrected in README and DEPLOYMENT.md | CI | **merged** `acbce21` |
+| [eu-reg-mcp #1](https://github.com/sebastianfoerste/eu-reg-mcp/pull/1) | linter rule count 35 → 36 | CI | **merged** `e3f8de9` |
+| [awesome-legaltech #99](https://github.com/Vaquill-AI/awesome-legaltech/pull/99) | rule count 35 → 36 in the merged list entry | their link-check | open, third-party |
 | [linter #8](https://github.com/sebastianfoerste/micar-whitepaper-linter/pull/8) | rule provenance ledger, rebased onto #9, regenerated (48 entries) | `micar-rule-proof --check` passes, 102 tests | draft; legal mapping needs owner review |
-| [profile #3](https://github.com/sebastianfoerste/sebastianfoerste/pull/3) | README rewrite, ledgers, extended checker | static checks; two live checks fail by design (pins, homepage) | open, unmerged |
+| [profile #3](https://github.com/sebastianfoerste/sebastianfoerste/pull/3) | README rewrite, ledgers, extended checker | static checks | **merged** `f777e69` |
 
-Still owner-only: pins (no API; `legal-ops-agent` archived and pinned, flagship not pinned); classifier homepage field (claim 12); the 21-finding study review against the frozen rule engine on linter `f30629f`; LegalBench sign-off; Marketplace; `v1.0.1` release and moving `v1`.
+Repository metadata set 2026-09-02: flagship homepage → playground; classifier homepage cleared. Canonical eu-reg-toolkit README carries the same rule-count fix in local commit `05346ae` on `codex/hybrid-consolidation-2026-08-26` (unpushed; `mcp-release` push is disabled by design) so the next `export-release-surface` keeps parity.
+
+Still owner-only: pins (no API; `legal-ops-agent` archived and pinned, flagship not pinned); the 21-finding study review against the frozen rule engine on linter `f30629f`; LegalBench sign-off; Marketplace; `v1.0.1` release and moving `v1`.
