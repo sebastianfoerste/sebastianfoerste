@@ -77,19 +77,21 @@ else
   pass "no merge conflict markers"
 fi
 
+before=$failures
 for pattern in "${reject_patterns[@]}"; do
   if grep -RIqnE -- "$pattern" "${front_door_files[@]}" 2>/dev/null; then
     fail "blocked promotional phrase: $pattern"
   fi
 done
-pass "promotional vocabulary screen"
+(( failures == before )) && pass "promotional vocabulary screen"
 
+before=$failures
 for pattern in "${stale_legal_patterns[@]}"; do
   if grep -RIqn -- "$pattern" "${front_door_files[@]}" 2>/dev/null; then
     fail "stale legal-status phrase: $pattern"
   fi
 done
-pass "stale legal-status screen"
+(( failures == before )) && pass "stale legal-status screen"
 
 grep -qn $'—' "${front_door_files[@]}" && fail "em dash in front-door docs"
 grep -qn $'–' "${front_door_files[@]}" && fail "en dash in front-door docs"
@@ -124,10 +126,10 @@ if [[ -f README.md ]]; then
   fi
 
   words="$(wc -w < README.md | tr -d ' ')"
-  if (( words > 400 )); then
-    fail "README is $words words; target is 250-350"
+  if (( words < 250 || words > 350 )); then
+    fail "README is $words words; required range is 250-350"
   else
-    pass "README length $words words"
+    pass "README length $words words (within 250-350)"
   fi
 fi
 
@@ -143,14 +145,26 @@ else
   fail "missing docs/portfolio-claim-ledger.md"
 fi
 
+# Every VERIFIED or CORRECTED claim must cite a 7+ hex public SHA; a row that is
+# "verified" against a local branch is not verified.
+if [[ -f docs/portfolio-claim-ledger.md ]]; then
+  before=$failures
+  while IFS= read -r line; do
+    n="$(printf '%s' "$line" | sed -E 's/^\| *([0-9]+) *\|.*/\1/')"
+    printf '%s' "$line" | grep -qE '`[0-9a-f]{7,40}`' || fail "claim $n is marked verified/corrected without a public SHA"
+  done < <(grep -E '^\| *[0-9]+ *\|' docs/portfolio-claim-ledger.md | grep -E '\| *(VERIFIED|CORRECTED)')
+  (( failures == before )) && pass "verified claims cite public SHAs"
+fi
+
 combined="$(mktemp)"
 trap 'rm -f "$combined"' EXIT
 cat "${front_door_files[@]}" > "$combined" 2>/dev/null
 
+before=$failures
 for term in "${required_terms[@]}"; do
   grep -qi -- "$term" "$combined" || fail "missing safety term: $term"
 done
-pass "safety terms present"
+(( failures == before )) && pass "safety terms present"
 
 if [[ "${CHECK_LIVE_GITHUB_VISIBILITY:-0}" == "1" ]]; then
   printf 'Live GitHub checks\n'
@@ -188,10 +202,31 @@ if [[ "${CHECK_LIVE_GITHUB_VISIBILITY:-0}" == "1" ]]; then
     if ! printf '%s\n' "$pins" | grep -q "^micar-whitepaper-linter:"; then
       fail "flagship is not pinned"
     fi
+    # Live pins must equal the target manifest exactly (order ignored).
+    want="$(python3 -c 'import json;print("\n".join(sorted(r["name"] for r in json.load(open("docs/pinned-repositories.json"))["repositories"])))')"
+    have="$(printf '%s\n' "$pins" | cut -d: -f1 | sort)"
+    if [[ "$want" != "$have" ]]; then
+      fail "live pins differ from docs/pinned-repositories.json (want: $(printf '%s' "$want" | tr '\n' ' '); have: $(printf '%s' "$have" | tr '\n' ' '))"
+    fi
     if (( failures == pin_before )); then
       pass "pin check complete"
     fi
   fi
+
+  # Cited SHAs must exist on the named repository.
+  before=$failures
+  while IFS= read -r line; do
+    n="$(printf '%s' "$line" | sed -E 's/^\| *([0-9]+) *\|.*/\1/')"
+    for pair in $(printf '%s' "$line" | grep -oE '(linter|classifier|dpa|eu-reg-mcp) main `[0-9a-f]{7,40}`' | sed -E 's/ main `/:/; s/`//'); do
+      short="${pair%%:*}"; sha="${pair##*:}"
+      case "$short" in
+        linter) repo=micar-whitepaper-linter ;; classifier) repo=eu-ai-act-classifier ;;
+        dpa) repo=dpa-and-data-transfer-review ;; eu-reg-mcp) repo=eu-reg-mcp ;;
+      esac
+      gh api "repos/sebastianfoerste/$repo/commits/$sha" --jq '.sha' >/dev/null 2>&1 || fail "claim $n cites $sha, which is not on $repo"
+    done
+  done < <(grep -E '^\| *[0-9]+ *\|' docs/portfolio-claim-ledger.md | grep -E '\| *(VERIFIED|CORRECTED)')
+  (( failures == before )) && pass "cited SHAs exist on their repositories"
 
   homepage="$(gh api repos/sebastianfoerste/micar-whitepaper-linter --jq '.homepage // ""' 2>/dev/null)"
   if [[ "$homepage" == *playground* ]]; then

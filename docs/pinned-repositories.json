@@ -1,7 +1,12 @@
 {
   "schema_version": "profile-pinned-repositories.v1",
-  "generated_from": "target GitHub pinned repositories",
+  "generated_from": "target GitHub pinned repositories (five proof repositories; sixth slot deliberately empty)",
   "repositories": [
+    {
+      "name": "micar-whitepaper-linter",
+      "url": "https://github.com/sebastianfoerste/micar-whitepaper-linter",
+      "layer": "Flagship"
+    },
     {
       "name": "legal-function-operating-system",
       "url": "https://github.com/sebastianfoerste/legal-function-operating-system",
@@ -13,9 +18,9 @@
       "layer": "Evaluation"
     },
     {
-      "name": "legal-ops-agent",
-      "url": "https://github.com/sebastianfoerste/legal-ops-agent",
-      "layer": "Supervised workflow"
+      "name": "eu-ai-act-classifier",
+      "url": "https://github.com/sebastianfoerste/eu-ai-act-classifier",
+      "layer": "Specialist tool"
     },
     {
       "name": "dpa-and-data-transfer-review",
