@@ -10,7 +10,7 @@ German-qualified lawyer, partner at gunnercooke, former NLP data scientist. I pr
 - Run it locally in three minutes: clone the repository, then `make install && make test && make demo`
 - Wire it into CI with the GitHub Action (`@v1`), or start from the [template repository](https://github.com/sebastianfoerste/micar-whitepaper-template)
 
-Rules fail closed. A draft format cannot pass the XHTML and Inline XBRL notification check, and the reserve deposit floor under Art. 36(4)(d) MiCAR stays in review until a lawyer has characterised significance and the referenced currency.
+Rules fail closed. A draft format cannot pass the XHTML and Inline XBRL notification check, and the reserve deposit floor never returns a pass at all: the linter names the candidate threshold under Art. 36(4)(d), Art. 45(7)(b), and Art. 35(4) with Art. 45(3) MiCAR, and leaves the legal conclusion to a lawyer.
 
 ## Supporting proofs
 
