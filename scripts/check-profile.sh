@@ -156,7 +156,9 @@ if [[ -f docs/portfolio-claim-ledger.md ]]; then
   (( failures == before )) && pass "verified claims cite public SHAs"
 fi
 
-combined="$(mktemp)"
+# macOS mktemp ignores TMPDIR and uses the system temp dir, which a sandboxed
+# or restricted runner may refuse. An explicit template keeps it writable.
+combined="$(mktemp "${TMPDIR:-/tmp}/profile-proof.XXXXXX")"
 trap 'rm -f "$combined"' EXIT
 cat "${front_door_files[@]}" > "$combined" 2>/dev/null
 
