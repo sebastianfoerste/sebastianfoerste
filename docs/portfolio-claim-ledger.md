@@ -28,10 +28,10 @@ Local: linter and classifier both on `codex/hybrid-consolidation-2026-08-26` (pr
 | 4 | iXBRL tagging check `COMMON.IXBRL_TAGGING` | linter `src/micar_linter/linter.py` `_apply` | Fails open: JSON/DOCX and untagged XHTML return **PASS** | 2026-09-01 | CORRECTED → merged, linter main `f30629f` (2026-09-02) |
 | 5 | `ANNEX_II.G.COMPOSITION` requires "30%" unconditionally, cited to Art. 36(1) | linter `rules/annex_ii.py` | Deposit floor is fact-dependent (30%/60%, significance) | 2026-09-01 | CORRECTED → merged, linter main `f30629f` (2026-09-02) |
 | 6 | "MIT. See LICENSE." | dpa-and-data-transfer-review README:105 | LICENSE is "All rights reserved"; GitHub reads NOASSERTION | 2026-09-01 | CORRECTED → merged, dpa main `c7b182e`; GitHub now reads MIT (2026-09-02) |
-| 7 | Linter test suite | 76 tests pass | local, `codex/hybrid-consolidation-2026-08-26` | 2026-09-01 | VERIFIED |
-| 8 | Classifier test suite | 97 tests pass | local, same branch | 2026-09-01 | VERIFIED |
-| 9 | "35 rules" | linter README / list entries | 35 distinct rule IDs (29 Annex + 6 cross-cutting) | 2026-08-31 | VERIFIED (wording: say "rule IDs") |
-| 10 | Playground live | sebastianfoerste.github.io/micar-whitepaper-linter/playground/ | HTTP 200 | 2026-08-31 | VERIFIED |
+| 7 | Linter test suite | 151 tests pass | public, linter main `57d0e94`; CI green on 3.13 and 3.14 (ci run 29) | 2026-09-19 | VERIFIED |
+| 8 | Classifier test suite | 97 tests pass | public, classifier main `acbce21`; CI green | 2026-09-02 | VERIFIED |
+| 9 | Rule count | eu-reg-mcp README (`e3f8de9`), awesome-legaltech entry (PR #99 pending); linter README carries no count | 36 distinct rule IDs on linter main `57d0e94`: 30 Annex-specific, 6 cross-cutting | 2026-09-19 | VERIFIED |
+| 10 | Playground live | `docs/playground/` on linter main `57d0e94`, served by GitHub Pages (source: main /docs) | HTTP 200 and page content verified | 2026-09-19 | VERIFIED |
 | 11 | Cockpit screenshots `docs/cockpit.png` and `docs/demo.png` | classifier main after #4 | Both still showed "provisional political agreement" and 2026-08 due dates | 2026-09-02 | CORRECTED → merged, classifier main `2866607` (2026-09-02) |
 | 12 | Repository homepage implies a working hosted cockpit | eu-ai-act-classifier homepage → web-opal-chi-38.vercel.app | Vercel cannot spawn the python backend; page stays at "Classifying", 0 registry entries | 2026-09-02 | CORRECTED → homepage field cleared; README and DEPLOYMENT.md now state there is no working hosted deployment, classifier main `acbce21` (2026-09-02) |
 
@@ -39,7 +39,7 @@ Local: linter and classifier both on `codex/hybrid-consolidation-2026-08-26` (pr
 
 - linter #8 (draft) `agent/extraordinary-proof-surfaces-20260728` — rule provenance ledger.
 - dpa #1, #2 (both draft) — role-neutral language; transfer-chain evidence graph.
-- Five awesome-list PRs open; **do not delete their forks**. awesome-legaltech #98 MERGED.
+- Seven awesome-list PRs open (verified 2026-09-20); **do not delete their forks**. awesome-legaltech #98 and awesome-eu-ai-act #71 are MERGED; awesome-legal-nlp #12 closed 2026-09-20 as a duplicate of #11.
 
 ## Distribution freeze
 
@@ -57,10 +57,15 @@ on public main.
 | [classifier #5](https://github.com/sebastianfoerste/eu-ai-act-classifier/pull/5) | regenerated cockpit screenshots from merged main | DOM-verified before capture | **merged** `2866607` |
 | [classifier #6](https://github.com/sebastianfoerste/eu-ai-act-classifier/pull/6) | hosted-cockpit claim corrected in README and DEPLOYMENT.md | CI | **merged** `acbce21` |
 | [eu-reg-mcp #1](https://github.com/sebastianfoerste/eu-reg-mcp/pull/1) | linter rule count 35 → 36 | CI | **merged** `e3f8de9` |
-| [awesome-legaltech #99](https://github.com/Vaquill-AI/awesome-legaltech/pull/99) | rule count 35 → 36 in the merged list entry | their link-check | open, third-party |
-| [linter #8](https://github.com/sebastianfoerste/micar-whitepaper-linter/pull/8) | rule provenance ledger, rebased onto #9, regenerated (48 entries) | `micar-rule-proof --check` passes, 102 tests | draft; legal mapping needs owner review |
+| [awesome-legaltech #99](https://github.com/Vaquill-AI/awesome-legaltech/pull/99) | rule count 35 → 36 in the merged list entry | their link-check is red on three unrelated upstream links (one 404, two timeouts); the submitted entry link returns HTTP 200 | open, third-party |
+| [linter #10](https://github.com/sebastianfoerste/micar-whitepaper-linter/pull/10) | reserve floor never passes; citation names Art. 35(4), Art. 36(4)(d), Art. 45(3) and Art. 45(7)(b) MiCAR | 148 tests, ruff; CI 3.13 + 3.14 | **merged** `3ed0afe` |
+| [linter #8](https://github.com/sebastianfoerste/micar-whitepaper-linter/pull/8) | rule provenance ledger, rebased onto #10, regenerated (48 entries) | `micar-rule-proof --check` passes, 154 tests at `bf0f57d` | draft; legal mapping needs owner review |
 | [profile #3](https://github.com/sebastianfoerste/sebastianfoerste/pull/3) | README rewrite, ledgers, extended checker | static checks | **merged** `f777e69` |
 
 Repository metadata set 2026-09-02: flagship homepage → playground; classifier homepage cleared. Canonical eu-reg-toolkit README carries the same rule-count fix in local commit `05346ae` on `codex/hybrid-consolidation-2026-08-26` (unpushed; `mcp-release` push is disabled by design) so the next `export-release-surface` keeps parity.
 
-Still owner-only: pins (no API; `legal-ops-agent` archived and pinned, flagship not pinned); the 21-finding study review against the frozen rule engine on linter `f30629f`; LegalBench sign-off; Marketplace; `v1.0.1` release and moving `v1`.
+Pins (web UI only; no repository-pin mutation in GitHub's public GraphQL): corrected 2026-09-19. The five pinned repositories now equal `docs/pinned-repositories.json`: `micar-whitepaper-linter`, `legal-function-operating-system`, `contract-review-eval-harness`, `eu-ai-act-classifier`, `dpa-and-data-transfer-review`. `legal-ops-agent` is no longer pinned.
+
+Legal-review gates (Sebastian): the 21-finding study review against the frozen rule engine on linter `57d0e94`; LegalBench sign-off.
+
+Approval-gated external actions (not technically owner-only): `v1.0.1` release, moving `v1`, Marketplace publication.
