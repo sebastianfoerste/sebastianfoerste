@@ -39,7 +39,7 @@ Local: linter and classifier both on `codex/hybrid-consolidation-2026-08-26` (pr
 
 - linter #8 (draft) `agent/extraordinary-proof-surfaces-20260728` — rule provenance ledger.
 - dpa #1, #2 (both draft) — role-neutral language; transfer-chain evidence graph.
-- Seven awesome-list PRs open (verified 2026-09-20); **do not delete their forks**. awesome-legaltech #98 and awesome-eu-ai-act #71 are MERGED; awesome-legal-nlp #12 closed 2026-09-20 as a duplicate of #11.
+- Six awesome-list PRs open (verified 2026-09-21); **do not delete their forks**. awesome-legaltech #98, awesome-eu-ai-act #71 and awesome-mcp-servers #13313 are MERGED; awesome-legal-nlp #12 closed 2026-09-20 as a duplicate of #11.
 
 ## Distribution freeze
 
@@ -61,6 +61,7 @@ on public main.
 | [linter #10](https://github.com/sebastianfoerste/micar-whitepaper-linter/pull/10) | reserve floor never passes; citation names Art. 35(4), Art. 36(4)(d), Art. 45(3) and Art. 45(7)(b) MiCAR | 148 tests, ruff; CI 3.13 + 3.14 | **merged** `3ed0afe` |
 | [linter #8](https://github.com/sebastianfoerste/micar-whitepaper-linter/pull/8) | rule provenance ledger, rebased onto #10, regenerated (48 entries) | `micar-rule-proof --check` passes, 154 tests at `bf0f57d` | draft; legal mapping needs owner review |
 | [profile #3](https://github.com/sebastianfoerste/sebastianfoerste/pull/3) | README rewrite, ledgers, extended checker | static checks | **merged** `f777e69` |
+| [profile #4](https://github.com/sebastianfoerste/sebastianfoerste/pull/4) | ledger to public SHAs, pin manifest, hardened checker, explicit mktemp template | Profile proof green on main (run #12) | **merged** `e0d8f11` |
 
 Repository metadata set 2026-09-02: flagship homepage → playground; classifier homepage cleared. Canonical eu-reg-toolkit README carries the same rule-count fix in local commit `05346ae` on `codex/hybrid-consolidation-2026-08-26` (unpushed; `mcp-release` push is disabled by design) so the next `export-release-surface` keeps parity.
 
@@ -68,4 +69,4 @@ Pins (web UI only; no repository-pin mutation in GitHub's public GraphQL): corre
 
 Legal-review gates (Sebastian): the 21-finding study review against the frozen rule engine on linter `57d0e94`; LegalBench sign-off.
 
-Approval-gated external actions (not technically owner-only): `v1.0.1` release, moving `v1`, Marketplace publication.
+Approval-gated external actions, all completed: `v1.1.1` released 2026-09-19 at linter `ac0a45f`, `v1` moved to it, and the release published to the GitHub Marketplace; Glama author claim posted on awesome-mcp-servers #13313 before its merge.
