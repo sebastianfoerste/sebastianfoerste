@@ -1,11 +1,11 @@
 {
   "schema_version": "profile-pinned-repositories.v1",
-  "generated_from": "target GitHub pinned repositories (five proof repositories; sixth slot deliberately empty)",
+  "generated_from": "target GitHub pinned repositories (six slots: evaluation, enablement, adoption, operating layer, two regulatory tools)",
   "repositories": [
     {
-      "name": "micar-whitepaper-linter",
-      "url": "https://github.com/sebastianfoerste/micar-whitepaper-linter",
-      "layer": "Flagship"
+      "name": "contract-review-eval-harness",
+      "url": "https://github.com/sebastianfoerste/contract-review-eval-harness",
+      "layer": "Evaluation"
     },
     {
       "name": "legal-function-operating-system",
@@ -13,9 +13,9 @@
       "layer": "Legal operating layer"
     },
     {
-      "name": "contract-review-eval-harness",
-      "url": "https://github.com/sebastianfoerste/contract-review-eval-harness",
-      "layer": "Evaluation"
+      "name": "micar-whitepaper-linter",
+      "url": "https://github.com/sebastianfoerste/micar-whitepaper-linter",
+      "layer": "Regulatory flagship"
     },
     {
       "name": "eu-ai-act-classifier",
@@ -23,9 +23,14 @@
       "layer": "Specialist tool"
     },
     {
-      "name": "dpa-and-data-transfer-review",
-      "url": "https://github.com/sebastianfoerste/dpa-and-data-transfer-review",
-      "layer": "Privacy and data transfers"
+      "name": "legal-ai-adoption-dashboard",
+      "url": "https://github.com/sebastianfoerste/legal-ai-adoption-dashboard",
+      "layer": "Adoption measurement"
+    },
+    {
+      "name": "legal-ai-workshop-kit",
+      "url": "https://github.com/sebastianfoerste/legal-ai-workshop-kit",
+      "layer": "Enablement"
     }
   ]
 }
