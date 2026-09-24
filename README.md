@@ -1,30 +1,30 @@
 # Sebastian Förste
 
-German-qualified lawyer, partner at gunnercooke, former NLP data scientist. I practise EU financial regulation: MiCAR, MiFID II, PSD2, DORA, and the AI Act where it reaches financial services. The repositories below turn that practice into deterministic, cited, testable tools. Every rule maps to a provision, and every finding carries its source status and a human-review boundary.
+German-qualified lawyer, partner at gunnercooke, former NLP data scientist. I work in German and English. The repositories below cover three jobs around legal AI: evaluating what a model produces, enabling lawyers to use it under review, and measuring whether adoption holds. My practice is EU financial regulation, and the regulatory tools apply the same method: every finding carries its source status and a human review boundary.
 
-## Start here
+## Evaluate
 
-**[micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)** checks a crypto-asset white paper draft against Annex I to III of MiCAR and reports each gap with a pinpoint citation.
+**[contract-review-eval-harness](https://github.com/sebastianfoerste/contract-review-eval-harness)** scores an AI contract review against hand-authored answer sets for an NDA, a SaaS agreement and a DPA: clause coverage, risk severity, citation grounding and hallucinations.
 
-- Try it in the browser, no install: [playground](https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/)
-- Run it locally in three minutes: clone the repository, then `make install && make test && make demo`
-- Wire it into CI with the GitHub Action (`@v1`), or start from the [template repository](https://github.com/sebastianfoerste/micar-whitepaper-template)
+- Run it in three minutes: clone, then `make install && make test && make demo`
+- The sample run catches a fabricated citation and marks the output for rejection
+- An adversarial campaign documents where the baseline adapter fails
 
-Rules fail closed. A draft format cannot pass the XHTML and Inline XBRL notification check, and the reserve deposit floor never returns a pass at all: the linter names the candidate threshold under Art. 36(4)(d), Art. 45(7)(b), and Art. 35(4) with Art. 45(3) MiCAR, and leaves the legal conclusion to a lawyer.
+## Enable and measure
 
-## Supporting proofs
+- **[legal-ai-workshop-kit](https://github.com/sebastianfoerste/legal-ai-workshop-kit)**: partner briefing, workshop and associate hands-on agendas, workflow discovery, a pilot prioritisation matrix, objection handling and a first 90 days plan.
+- **[legal-ai-adoption-dashboard](https://github.com/sebastianfoerste/legal-ai-adoption-dashboard)**: account health, adoption blockers and a product feedback queue over synthetic accounts. [Live demo](https://legal-ai-adoption-dashboard.vercel.app).
+- **[legal-function-operating-system](https://github.com/sebastianfoerste/legal-function-operating-system)**: legal intake, risk bands, routing, SLAs, approvals and board reporting, with a supervised agent held behind a versioned control contract.
 
-- **[legal-function-operating-system](https://github.com/sebastianfoerste/legal-function-operating-system)**: an operating model for legal intake, risk bands, routing, SLAs, approvals, and board reporting, with a supervised agent held behind a versioned control contract.
-- **[contract-review-eval-harness](https://github.com/sebastianfoerste/contract-review-eval-harness)**: deterministic scoring of AI contract review against hand-authored answer sets, including an adversarial campaign the baseline adapter fails.
+## Regulatory depth
 
-## Specialist tools
-
+- **[micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)**: checks a crypto-asset white paper draft against Annex I to III of MiCAR and reports each gap with a pinpoint citation. Rules fail closed. Try the [playground](https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/), no install.
 - **[eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier)**: AI Act risk-tier triage with cited obligations, current under Regulation (EU) 2026/1744.
 - **[dpa-and-data-transfer-review](https://github.com/sebastianfoerste/dpa-and-data-transfer-review)**: cited GDPR Art. 28 and Chapter V checks with a visible review state.
 
 ## Boundaries
 
-All examples are synthetic. These are reviewable prototypes with source provenance and audit trails, not claims of production deployment. This is not legal advice, and no tool permits consequential external action without human review. AI assisted the implementation; the rule taxonomies, citations, and scope limits are my judgment.
+All examples are synthetic. These are reviewable prototypes with source provenance and audit trails, not claims of production deployment. This is not legal advice, and no tool permits consequential external action without human review. AI assisted the implementation; the rule taxonomies, citations, answer sets and scope limits are my judgment.
 
 ## Background
 
