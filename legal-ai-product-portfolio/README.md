@@ -11,9 +11,9 @@ Start with these repositories:
 | Repository | Review purpose |
 |---|---|
 | contract-review-eval-harness | Shows how legal AI outputs can be evaluated with expected answer coverage, citation checks and hallucination tracking |
-| legal-ops-agent | Shows how legal work can be structured into intake, triage, reviewer routing and approval controlled export |
+| legal-function-operating-system | Shows how legal work can be structured into intake, triage, reviewer routing and approval controlled export; it includes the supervised agent that began as legal-ops-agent |
+| dpa-and-data-transfer-review | Shows structured review of recurring SaaS and AI vendor data protection work under Art. 28 GDPR and Chapter V |
 | legal-ai-adoption-dashboard | Shows product thinking around rollout, usage, blockers, feedback and account health |
-| ai-saas-legal-ops-starter-kit | Shows structured legal operations for recurring AI SaaS legal work |
 | eu-ai-act-classifier | Shows deterministic regulatory classification with sources, obligations and review status |
 
 ## What This Portfolio Demonstrates
@@ -35,9 +35,9 @@ The repositories in this portfolio therefore focus on intake, triage, evaluation
 ## Suggested Pinned Repository Order
 
 1. contract-review-eval-harness
-2. legal-ops-agent
+2. legal-function-operating-system
 3. legal-ai-adoption-dashboard
-4. ai-saas-legal-ops-starter-kit
+4. dpa-and-data-transfer-review
 5. eu-ai-act-classifier
 6. legal-ai-product-portfolio
 
