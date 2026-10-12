@@ -241,15 +241,15 @@ Approval state:
 - Security: pending.
 - Export: blocked until the no-training and retention positions are contractually documented.
 
-## Integration with ai-saas-legal-ops-starter-kit
+## Integration with legal-function-operating-system
 
-This playbook defines the legal judgment structure. The starter kit turns the same structure into executable intake, deterministic checks, risk reporting and approval gates.
+This playbook defines the legal judgment structure. [legal-function-operating-system](https://github.com/sebastianfoerste/legal-function-operating-system) turns the same structure into executable intake, deterministic risk, an approval matrix and board reporting; [dpa-and-data-transfer-review](https://github.com/sebastianfoerste/dpa-and-data-transfer-review) runs the clause-level DPA checks.
 
 Suggested mapping:
 
 ```yaml
 playbook_issue: ai_provider_training
-starter_kit_intake: ai_vendor_review
+intake_route: ai_vendor_review
 deterministic_rule: customer_data_used_for_model_training
 review_gate:
   required_approvals:
@@ -264,7 +264,7 @@ evidence:
   - subprocessor_list
 ```
 
-Use the playbook to agree the position. Use the starter kit to make the position visible in intake, tests, board risk register, evidence requests and audit trail.
+Use the playbook to agree the position. Use the operating system to make the position visible in intake, tests, board risk register, evidence requests and audit trail.
 
 ## Human review notice
 
