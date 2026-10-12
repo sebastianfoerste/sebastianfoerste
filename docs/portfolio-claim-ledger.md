@@ -35,17 +35,21 @@ Local: linter and classifier both on `codex/hybrid-consolidation-2026-08-26` (pr
 | 11 | Cockpit screenshots `docs/cockpit.png` and `docs/demo.png` | classifier main after #4 | Both still showed "provisional political agreement" and 2026-08 due dates | 2026-09-02 | CORRECTED → merged, classifier main `2866607` (2026-09-02) |
 | 12 | Repository homepage implies a working hosted cockpit | eu-ai-act-classifier homepage → web-opal-chi-38.vercel.app | Vercel cannot spawn the python backend; page stays at "Classifying", 0 registry entries | 2026-09-02 | CORRECTED → homepage field cleared; README and DEPLOYMENT.md now state there is no working hosted deployment, classifier main `acbce21` (2026-09-02) |
 | 13 | Classifier playground live | `docs/playground/` on classifier main `a6f8bbb`, served by GitHub Pages (source: main /docs) | HTTP 200 and page content verified | 2026-10-12 | VERIFIED |
+| 14 | The five pinned repositories equal `docs/pinned-repositories.json` and include `dpa-and-data-transfer-review` | this ledger, pins note dated 2026-09-19 | The manifest lists six repositories since profile main `467d353` (merged 2026-09-24) and no longer includes `dpa-and-data-transfer-review`; the public profile page showed the same six pins, none archived | 2026-10-12 | CORRECTED → pins note restated below; manifest at profile main `467d353` |
+| 15 | The eu-reg-toolkit README is the canonical carrier of the linter rule count | this ledger, metadata note dated 2026-09-02 | eu-reg-toolkit was retired on 2026-09-25 and the public repositories are canonical; the count is public in the eu-reg-mcp README | 2026-10-12 | CORRECTED → metadata note restated below; eu-reg-mcp main `e3f8de9` |
 
 ## Open PRs to reconcile
 
 - linter #8 (draft) `agent/extraordinary-proof-surfaces-20260728` — rule provenance ledger.
 - Six awesome-list PRs open (verified 2026-09-21); **do not delete their forks**. awesome-legaltech #98, awesome-eu-ai-act #71 and awesome-mcp-servers #13313 are MERGED; awesome-legal-nlp #12 closed 2026-09-20 as a duplicate of #11.
 
-## Distribution freeze
+## Distribution freeze (ended 2026-09-02)
 
-No new repositories, no further list submissions, no Marketplace publication, no launch
-posts, no outreach until claims 1, 2, 4, 5 and 6 are dispositioned VERIFIED or CORRECTED
-on public main.
+Obsolete, kept as a record. The freeze barred new repositories, further list submissions,
+Marketplace publication, launch posts and outreach until claims 1, 2, 4, 5 and 6 were
+dispositioned VERIFIED or CORRECTED on public main. All five were CORRECTED on public main
+on 2026-09-02 (classifier `066cb09`, linter `f30629f`, dpa `c7b182e`). The approval-gated
+actions at the end of this ledger were taken after that date.
 
 ## Remediation status (2026-09-02)
 
@@ -63,9 +67,9 @@ on public main.
 | [profile #3](https://github.com/sebastianfoerste/sebastianfoerste/pull/3) | README rewrite, ledgers, extended checker | static checks | **merged** `f777e69` |
 | [profile #4](https://github.com/sebastianfoerste/sebastianfoerste/pull/4) | ledger to public SHAs, pin manifest, hardened checker, explicit mktemp template | Profile proof green on main (run #12) | **merged** `e0d8f11` |
 
-Repository metadata set 2026-09-02: flagship homepage → playground; classifier homepage cleared. Canonical eu-reg-toolkit README carries the same rule-count fix in local commit `05346ae` on `codex/hybrid-consolidation-2026-08-26` (unpushed; `mcp-release` push is disabled by design) so the next `export-release-surface` keeps parity.
+Repository metadata set 2026-09-02: flagship homepage → playground; classifier homepage cleared. On that date this note called the eu-reg-toolkit README canonical and pointed to its local commit `05346ae` on `codex/hybrid-consolidation-2026-08-26` for the rule-count fix. eu-reg-toolkit was retired on 2026-09-25 and the public repositories are canonical (claim 15). The count is public on eu-reg-mcp main `e3f8de9`; `05346ae` was never pushed and is no longer needed for parity.
 
-Pins (web UI only; no repository-pin mutation in GitHub's public GraphQL): corrected 2026-09-19. The five pinned repositories now equal `docs/pinned-repositories.json`: `micar-whitepaper-linter`, `legal-function-operating-system`, `contract-review-eval-harness`, `eu-ai-act-classifier`, `dpa-and-data-transfer-review`. `legal-ops-agent` is no longer pinned.
+Pins (web UI only; no repository-pin mutation in GitHub's public GraphQL): corrected 2026-09-19. On that date the five pinned repositories equalled the manifest of the time (`micar-whitepaper-linter`, `legal-function-operating-system`, `contract-review-eval-harness`, `eu-ai-act-classifier`, `dpa-and-data-transfer-review`) and `legal-ops-agent` left the pins. Since profile main `467d353` (merged 2026-09-24) `docs/pinned-repositories.json` lists six repositories: `contract-review-eval-harness`, `legal-function-operating-system`, `micar-whitepaper-linter`, `eu-ai-act-classifier`, `legal-ai-adoption-dashboard`, `legal-ai-workshop-kit`. `dpa-and-data-transfer-review` is no longer a pin target. The live pins equalled these six on 2026-10-12 (claim 14).
 
 Legal-review gates (Sebastian): the 21-finding study review against the frozen rule engine on linter `57d0e94`; LegalBench sign-off.
 
