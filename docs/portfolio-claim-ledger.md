@@ -34,11 +34,11 @@ Local: linter and classifier both on `codex/hybrid-consolidation-2026-08-26` (pr
 | 10 | Playground live | `docs/playground/` on linter main `57d0e94`, served by GitHub Pages (source: main /docs) | HTTP 200 and page content verified | 2026-09-19 | VERIFIED |
 | 11 | Cockpit screenshots `docs/cockpit.png` and `docs/demo.png` | classifier main after #4 | Both still showed "provisional political agreement" and 2026-08 due dates | 2026-09-02 | CORRECTED → merged, classifier main `2866607` (2026-09-02) |
 | 12 | Repository homepage implies a working hosted cockpit | eu-ai-act-classifier homepage → web-opal-chi-38.vercel.app | Vercel cannot spawn the python backend; page stays at "Classifying", 0 registry entries | 2026-09-02 | CORRECTED → homepage field cleared; README and DEPLOYMENT.md now state there is no working hosted deployment, classifier main `acbce21` (2026-09-02) |
+| 13 | Classifier playground live | `docs/playground/` on classifier main `a6f8bbb`, served by GitHub Pages (source: main /docs) | HTTP 200 and page content verified | 2026-10-12 | VERIFIED |
 
 ## Open PRs to reconcile
 
 - linter #8 (draft) `agent/extraordinary-proof-surfaces-20260728` — rule provenance ledger.
-- dpa #1, #2 (both draft) — role-neutral language; transfer-chain evidence graph.
 - Six awesome-list PRs open (verified 2026-09-21); **do not delete their forks**. awesome-legaltech #98, awesome-eu-ai-act #71 and awesome-mcp-servers #13313 are MERGED; awesome-legal-nlp #12 closed 2026-09-20 as a duplicate of #11.
 
 ## Distribution freeze
