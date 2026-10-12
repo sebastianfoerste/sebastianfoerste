@@ -32,17 +32,6 @@ Useful legal AI is not merely prompt engineering. The stronger product question 
 
 The repositories in this portfolio therefore focus on intake, triage, evaluation, review states, blocked exports, audit trails, adoption blockers and source aware regulatory workflows.
 
-## Suggested Pinned Repository Order
-
-1. contract-review-eval-harness
-2. legal-function-operating-system
-3. legal-ai-adoption-dashboard
-4. dpa-and-data-transfer-review
-5. eu-ai-act-classifier
-6. legal-ai-product-portfolio
-
-GitHub pinned repositories have to be changed manually in the profile UI.
-
 ## Suggested Next Repository
 
 Name: legal-ai-matter-review-workbench
