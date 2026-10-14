@@ -19,15 +19,15 @@ German-qualified lawyer, partner at gunnercooke, former NLP data scientist. I wo
 ## Regulatory depth
 
 - **[micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)**: checks a crypto-asset white paper draft against Annex I to III of MiCAR and reports each gap with a pinpoint citation. Rules fail closed. Runs in a no-install [playground](https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/) or as a [GitHub Action](https://github.com/marketplace/actions/micar-whitepaper-lint).
-- **[eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier)**: AI Act risk-tier triage with cited obligations and the application dates as amended by [Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj), with a no-install [playground](https://sebastianfoerste.github.io/eu-ai-act-classifier/playground/).
+- **[eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier)**: AI Act risk-tier triage with cited obligations and the high-risk application dates set by [Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj), with a no-install [playground](https://sebastianfoerste.github.io/eu-ai-act-classifier/playground/).
 - **[dpa-and-data-transfer-review](https://github.com/sebastianfoerste/dpa-and-data-transfer-review)**: cited GDPR Art. 28 and Chapter V checks with a visible review state.
 - **[micar-register-observatory](https://github.com/sebastianfoerste/micar-register-observatory)**: weekly snapshots of the public ESMA interim MiCAR register that record new, changed and removed entries, plus a quarterly data report.
-- **[eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp)**: an MCP server giving AI agents the register data, linter and classifier above; lint and classification results are marked as candidates pending human review.
+- **[eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp)**: an MCP server for the register data, linter and classifier above; lint and classification results are marked as candidates pending human review.
 - **[awesome-eu-fintech-regulation](https://github.com/sebastianfoerste/awesome-eu-fintech-regulation)**: curated primary sources, regulators and open-source tools for EU fintech and crypto-asset regulation, with a dated Level 2 tracker.
 
 ## Boundaries
 
-All examples are synthetic, except the register snapshots, which come from the public ESMA interim MiCAR register. These are reviewable prototypes with source provenance and audit trails, not claims of production deployment. This is not legal advice, and no tool permits consequential external action without human review. AI assisted the implementation; the rule taxonomies, citations, answer sets and scope limits are my judgment.
+All examples are synthetic, except the register snapshots and the linter's pilot study, which use the public ESMA interim MiCAR register and white papers listed there. These are reviewable prototypes with source provenance and audit trails, not claims of production deployment. This is not legal advice, and no tool permits consequential external action without human review. AI assisted the implementation; the rule taxonomies, citations, answer sets and scope limits are my judgment.
 
 ## Background
 
