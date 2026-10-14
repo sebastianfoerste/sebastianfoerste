@@ -10,7 +10,7 @@ Claim-by-claim sources and their status: [verification table](ai-act-after-the-o
 
 ## 1. Bottom line
 
-- **The date moved, the duty did not.** The high-risk rules for credit scoring of natural persons and for life and health insurance pricing now apply from 2 December 2027, not 2 August 2026, and the date is fixed [1][2]. Systems placed on the market or put into service before then are covered only once significantly changed in design from that date; those intended for public authorities must comply by 2 August 2030 (Art. 111(2)).
+- **The date moved, the duty did not.** The high-risk rules for credit scoring of natural persons and for life and health insurance pricing now apply from 2 December 2027, not 2 August 2026, and the date is fixed [1][2]. Systems placed on the market or put into service before then are covered only once significantly changed in design from that date; those intended for public authorities must comply by 2 August 2030 (Art. 111(2)) [2].
 - **Three duties already apply:** AI literacy measures, the prohibitions and, since 2 August 2026, transparency towards customers. DORA has governed in-scope banks' and insurers' contracts for ICT services, including AI services, since 17 January 2025 [2][9].
 - **Much of the generative-AI value in a bank sits outside the high-risk perimeter.** What decides the model choice is DORA third-party risk, evidence and data location.
 
@@ -23,7 +23,7 @@ Regulation (EU) 2026/1744 amends the AI Act and has been in force since 27 July 
 - Art. 49(2) registration of Art. 6(3) "not high-risk" self-assessments survives in simplified form.
 - New Art. 4a lets providers and deployers of all AI systems and models process special-category data to detect and correct bias, under conditions; high-risk providers keep the strict test of former Art. 10(5).
 - Financial institutions' systems within Art. 74(6) stay outside the AI Office's new exclusive competence.
-- Unchanged: the Annex III list, Art. 26 and the fine amounts. New: fines for the value-chain duties in Art. 25(2) and (4) and, except for prohibited practices, the lower of the two caps for small mid-caps (Art. 99(4)(da), (6a)).
+- Unchanged: the Annex III list, Art. 26 and the fine amounts. New: the value-chain duties in Art. 25(2) and (4) join the 3 % tier and, except for prohibited practices, small mid-caps get the lower cap (Art. 99(4)(da), (6a)).
 
 Still open: the Art. 6 classification guidelines (Commission draft of 19 May 2026) [4] and the GDPR half of the omnibus, COM(2025) 837, still in the legislative process. Do not plan on it.
 
