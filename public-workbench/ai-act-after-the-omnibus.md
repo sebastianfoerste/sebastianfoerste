@@ -10,7 +10,7 @@ Claim-by-claim sources and their status: [verification table](ai-act-after-the-o
 
 ## 1. Bottom line
 
-- **The date moved, the duty did not.** The high-risk rules for credit scoring of natural persons and for life and health insurance pricing now apply from 2 December 2027, not 2 August 2026, and the date is fixed [1][2].
+- **The date moved, the duty did not.** The high-risk rules for credit scoring of natural persons and for life and health insurance pricing now apply from 2 December 2027, not 2 August 2026, and the date is fixed [1][2]. Systems placed on the market or put into service before then are covered only once significantly changed in design from that date; those intended for public authorities must comply by 2 August 2030 (Art. 111(2)).
 - **Three duties already apply:** AI literacy measures, the prohibitions and, since 2 August 2026, transparency towards customers. DORA has governed in-scope banks' and insurers' contracts for ICT services, including AI services, since 17 January 2025 [2][9].
 - **Much of the generative-AI value in a bank sits outside the high-risk perimeter.** What decides the model choice is DORA third-party risk, evidence and data location.
 
@@ -23,7 +23,7 @@ Regulation (EU) 2026/1744 amends the AI Act and has been in force since 27 July 
 - Art. 49(2) registration of Art. 6(3) "not high-risk" self-assessments survives in simplified form.
 - New Art. 4a lets providers and deployers of all AI systems and models process special-category data to detect and correct bias, under conditions; high-risk providers keep the strict test of former Art. 10(5).
 - Financial institutions' systems within Art. 74(6) stay outside the AI Office's new exclusive competence.
-- Unchanged: the Annex III list, Arts. 26 and 27, and the penalty tiers.
+- Unchanged: the Annex III list, Art. 26 and the fine amounts. New: fines for the value-chain duties in Art. 25(2) and (4) and, except for prohibited practices, the lower of the two caps for small mid-caps (Art. 99(4)(da), (6a)).
 
 Still open: the Art. 6 classification guidelines (Commission draft of 19 May 2026) [4] and the GDPR half of the omnibus, COM(2025) 837, still in the legislative process. Do not plan on it.
 
@@ -36,7 +36,7 @@ Still open: the Art. 6 classification guidelines (Commission draft of 19 May 202
 - **Supervisor.** For regulated financial institutions' high-risk systems used in direct connection with their financial services, the financial supervisor is the market surveillance authority (Art. 74(6)). In Germany the KI-MIG names BaFin; other uses, such as HR, go to the Bundesnetzagentur [7].
 - **Adjacent law.** Automated scoring also engages Art. 18(8) of the Consumer Credit Directive (EU) 2023/2225 [5] and, after C-634/21 SCHUFA, Art. 22 GDPR [8].
 
-## 4. What, by when, who
+## 4. What, by when, who [1][2][3][5][6][9]
 
 | What | By when | Who |
 |---|---|---|
@@ -47,11 +47,9 @@ Still open: the Art. 6 classification guidelines (Commission draft of 19 May 202
 | German rules implementing the Consumer Credit Directive | 20 Nov 2026 | Retail credit |
 | Marking for generative systems already on the market (Art. 50(2)); new Art. 5 prohibitions | 2 Dec 2026 | Vendors, in-house GenAI owners |
 | Inventory and classification; document and register Art. 6(3) derogations | Now to mid-2027 (recommended) | Model risk, legal |
-| Provider duties (Arts. 9-17, 43, 47-49, 72-73) | 2 Dec 2027 | Model owners, second line |
-| Deployer duties, including the FRIA (Arts. 26, 27) | 2 Dec 2027 | Business line, compliance |
+| Provider duties (Arts. 9-17, 43, 47-49, 72-73; see Art. 111(2)) | 2 Dec 2027 | Model owners, second line |
+| Deployer duties, including the FRIA (Arts. 26, 27; see Art. 111(2)) | 2 Dec 2027 | Business line, compliance |
 | High-risk under Annex I (regulated products) | 2 Aug 2028 | Product compliance (rare in banks and insurers) |
-
-Sources: [1][2][3][5][6][9].
 
 ## 5. DORA already governs AI vendor contracts
 
