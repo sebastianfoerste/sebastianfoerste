@@ -25,7 +25,7 @@ German-qualified lawyer, partner at gunnercooke, former NLP data scientist. I wo
 - **[micar-register-observatory](https://github.com/sebastianfoerste/micar-register-observatory)**: weekly snapshots of the public ESMA interim MiCAR register that record new, changed and removed entries, plus a quarterly data report.
 - **[eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp)**: an MCP server for the register data, linter and classifier above; lint and classification results are marked as candidates pending human review.
 - **[awesome-eu-fintech-regulation](https://github.com/sebastianfoerste/awesome-eu-fintech-regulation)**: curated primary sources, regulators and open-source tools for EU fintech and crypto-asset regulation, with a dated Level 2 tracker.
-- **[AI Act brief for banks and insurers](https://github.com/sebastianfoerste/sebastianfoerste/blob/main/public-workbench/ai-act-banks-and-insurers-brief.md)**: what the AI Act, as amended (consolidated text of 27 July 2026), requires for credit scoring and for life and health insurance risk assessment and pricing. It also gives a 90-day list and a proposed role for Claude under human review.
+- **[AI Act brief for banks and insurers](https://github.com/sebastianfoerste/sebastianfoerste/blob/main/public-workbench/ai-act-banks-and-insurers-brief.md)**: credit-scoring and life and health insurance pricing duties, with a proposed, human-reviewed role for Claude.
 
 ## Boundaries
 
