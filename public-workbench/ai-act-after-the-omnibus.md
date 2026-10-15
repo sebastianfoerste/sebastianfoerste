@@ -80,7 +80,7 @@ Claude fits outside Annex III, with human sign-off: KYC files, corporate credit 
 
 - *Classification:* given a bank credit-scoring system characterised as Annex III point 5(b), or a life insurer's pricing model characterised as point 5(c), [eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier) returns high-risk and attaches Art. 26 and 27 duties dated 2 December 2027. The Annex III characterisation is an input a lawyer confirms. Worked examples: [to be added].
 - *Review gate:* an unproven Art. 6(3) "not high-risk" claim returns `requires_review`, not a downgrade.
-- *Claude integration:* [eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp) exposes the classifier to Claude as an MCP tool [install fix pending]. Demo transcript: [to be added].
+- *Claude integration:* [eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp) exposes the classifier to Claude as an MCP tool. Demo transcript: [to be added].
 
 ### Sources
 
