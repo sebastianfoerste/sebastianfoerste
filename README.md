@@ -20,11 +20,12 @@ German-qualified lawyer, partner at gunnercooke, former NLP data scientist. I wo
 ## Regulatory depth
 
 - **[micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)**: checks a crypto-asset white paper draft against Annex I to III of MiCAR and reports each gap with a pinpoint citation. Rules fail closed. Runs in a no-install [playground](https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/) or as a [GitHub Action](https://github.com/marketplace/actions/micar-whitepaper-lint).
-- **[eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier)**: AI Act risk-tier triage with cited obligations and the high-risk application dates set by [Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj), with a no-install [playground](https://sebastianfoerste.github.io/eu-ai-act-classifier/playground/).
+- **[eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier)**: AI Act risk-tier triage with cited obligations and the high-risk application dates in Article 113 of the consolidated text of 27 July 2026, with a no-install [playground](https://sebastianfoerste.github.io/eu-ai-act-classifier/playground/).
 - **[dpa-and-data-transfer-review](https://github.com/sebastianfoerste/dpa-and-data-transfer-review)**: cited GDPR Art. 28 and Chapter V checks with a visible review state.
 - **[micar-register-observatory](https://github.com/sebastianfoerste/micar-register-observatory)**: weekly snapshots of the public ESMA interim MiCAR register that record new, changed and removed entries, plus a quarterly data report.
 - **[eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp)**: an MCP server for the register data, linter and classifier above; lint and classification results are marked as candidates pending human review.
 - **[awesome-eu-fintech-regulation](https://github.com/sebastianfoerste/awesome-eu-fintech-regulation)**: curated primary sources, regulators and open-source tools for EU fintech and crypto-asset regulation, with a dated Level 2 tracker.
+- **[AI Act brief for banks and insurers](https://github.com/sebastianfoerste/sebastianfoerste/blob/main/public-workbench/ai-act-banks-and-insurers-brief.md)**: what the AI Act, as amended (consolidated text of 27 July 2026), requires for credit scoring and for life and health insurance risk assessment and pricing. It also gives a 90-day list and a proposed role for Claude under human review.
 
 ## Boundaries
 
@@ -33,5 +34,7 @@ All examples are synthetic, except the register snapshots and the linter's pilot
 ## Background
 
 Admitted in Germany in 2012. Trained at Hengeler Mueller, Freshfields Bruckhaus Deringer, and Cleary Gottlieb. Earlier, Python NLP pipelines as a data scientist at Dudenverlag.
+
+I helped build gunnercooke Germany from roughly 15 to more than 60 lawyers, advising on senior partner recruitments and practice-group expansions.
 
 Questions on legal AI or EU financial regulation: [LinkedIn](https://www.linkedin.com/in/sebastianfoerste)
