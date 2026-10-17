@@ -33,6 +33,4 @@ Since [year] I have recruited [N] lateral partners for gunnercooke Germany.
 
 Admitted in Germany in 2012. Trained at Hengeler Mueller, Freshfields Bruckhaus Deringer, and Cleary Gottlieb. Earlier, Python NLP pipelines as a data scientist at Dudenverlag.
 
-I helped build gunnercooke Germany from roughly 15 to more than 60 lawyers, advising on senior partner recruitments and practice-group expansions.
-
 Questions on legal AI or EU financial regulation: [LinkedIn](https://www.linkedin.com/in/sebastianfoerste)
