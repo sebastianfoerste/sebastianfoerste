@@ -1,6 +1,6 @@
 {
   "schema_version": "profile-pinned-repositories.v1",
-  "generated_from": "target GitHub pinned repositories (six slots: evaluation, enablement, adoption, operating layer, two regulatory tools)",
+  "generated_from": "target GitHub pinned repositories (six slots: evaluation, adoption, operating layer, two regulatory tools, regulatory sources)",
   "repositories": [
     {
       "name": "contract-review-eval-harness",
@@ -28,9 +28,9 @@
       "layer": "Adoption measurement"
     },
     {
-      "name": "legal-ai-workshop-kit",
-      "url": "https://github.com/sebastianfoerste/legal-ai-workshop-kit",
-      "layer": "Enablement"
+      "name": "awesome-eu-fintech-regulation",
+      "url": "https://github.com/sebastianfoerste/awesome-eu-fintech-regulation",
+      "layer": "Regulatory sources"
     }
   ]
 }
