@@ -15,11 +15,12 @@ German-qualified lawyer, partner at gunnercooke, former NLP data scientist. I wo
 - **[legal-ai-adoption-dashboard](https://github.com/sebastianfoerste/legal-ai-adoption-dashboard)**: account health, adoption blockers and a product feedback queue. [Live demo](https://legal-ai-adoption-dashboard.vercel.app).
 - **[legal-function-operating-system](https://github.com/sebastianfoerste/legal-function-operating-system)**: intake, risk bands, routing, SLAs, approvals and board reporting, with a supervised agent behind a versioned control contract.
 
-## Regulatory depth
+## Regulatory toolkit
 
-- **[micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)**: checks a crypto-asset white paper draft against Annex I to III of MiCAR and reports each gap with a pinpoint citation. Rules fail closed. Runs in a no-install [playground](https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/) or as a [GitHub Action](https://github.com/marketplace/actions/micar-whitepaper-lint).
-- **[eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier)**: AI Act risk-tier triage with cited obligations, current under Regulation (EU) 2026/1744, with a no-install [playground](https://sebastianfoerste.github.io/eu-ai-act-classifier/playground/).
+- **[micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)**: MiCAR Annex I to III white paper checks with pinpoint citations. [Playground](https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/), [GitHub Action](https://github.com/marketplace/actions/micar-whitepaper-lint).
+- **[eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier)**: AI Act risk-tier triage with cited obligations, current under Regulation (EU) 2026/1744. [Playground](https://sebastianfoerste.github.io/eu-ai-act-classifier/playground/).
 - **[dpa-and-data-transfer-review](https://github.com/sebastianfoerste/dpa-and-data-transfer-review)**: cited GDPR Art. 28 and Chapter V checks with a visible review state.
+- **[eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp)**: MCP server giving AI agents cited, review-gated grounding in EU regulation.
 - **[awesome-eu-fintech-regulation](https://github.com/sebastianfoerste/awesome-eu-fintech-regulation)**: curated primary sources, regulators and open-source tools for EU fintech and crypto-asset regulation, with a dated Level 2 tracker.
 
 ## Boundaries
