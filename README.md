@@ -18,10 +18,9 @@ German-qualified lawyer, partner at gunnercooke, former NLP data scientist. I wo
 ## Regulatory toolkit
 
 - **[micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)**: MiCAR Annex I to III white paper checks with pinpoint citations. [Playground](https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/), [GitHub Action](https://github.com/marketplace/actions/micar-whitepaper-lint).
-- **[eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier)**: AI Act risk-tier triage with cited obligations, current under Regulation (EU) 2026/1744. [Live playground](https://sebastianfoerste.github.io/eu-ai-act-classifier/).
+- **[eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier)**: AI Act risk-tier triage with cited obligations, current under Regulation (EU) 2026/1744. [Playground](https://sebastianfoerste.github.io/eu-ai-act-classifier/playground/).
 - **[dpa-and-data-transfer-review](https://github.com/sebastianfoerste/dpa-and-data-transfer-review)**: cited GDPR Art. 28 and Chapter V checks with a visible review state.
 - **[eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp)**: MCP server giving AI agents cited, review-gated grounding in EU regulation.
-- **[contract-review-eval-harness](https://github.com/sebastianfoerste/contract-review-eval-harness)**: scores AI contract review against lawyer-written answer sets.
 - **[awesome-eu-fintech-regulation](https://github.com/sebastianfoerste/awesome-eu-fintech-regulation)**: curated primary sources, regulators and open-source tools for EU fintech and crypto-asset regulation, with a dated Level 2 tracker.
 
 ## Boundaries
