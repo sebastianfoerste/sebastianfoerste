@@ -71,6 +71,8 @@ Repository metadata set 2026-09-02: flagship homepage → playground; classifier
 
 Pins (web UI only; no repository-pin mutation in GitHub's public GraphQL): corrected 2026-09-19. On that date the five pinned repositories equalled the manifest of the time (`micar-whitepaper-linter`, `legal-function-operating-system`, `contract-review-eval-harness`, `eu-ai-act-classifier`, `dpa-and-data-transfer-review`) and `legal-ops-agent` left the pins. Since profile main `467d353` (merged 2026-09-24) `docs/pinned-repositories.json` lists six repositories: `contract-review-eval-harness`, `legal-function-operating-system`, `micar-whitepaper-linter`, `eu-ai-act-classifier`, `legal-ai-adoption-dashboard`, `legal-ai-workshop-kit`. `dpa-and-data-transfer-review` is no longer a pin target. The live pins equalled these six on 2026-10-12 (claim 14).
 
+Pins note 2026-10-17: `legal-ai-workshop-kit` was archived on 2026-10-17, superseded by `legal-ai-adoption-dashboard`, which now carries the workshop kit. `docs/pinned-repositories.json` replaces it with `awesome-eu-fintech-regulation` and lists `contract-review-eval-harness`, `legal-function-operating-system`, `micar-whitepaper-linter`, `eu-ai-act-classifier`, `legal-ai-adoption-dashboard`, `awesome-eu-fintech-regulation`. On 2026-10-17 the public profile page still pinned `legal-ai-workshop-kit`; the live pins need the same swap in the web UI.
+
 Legal-review gates (Sebastian): the 21-finding study review against the frozen rule engine on linter `57d0e94`; LegalBench sign-off.
 
 Approval-gated external actions, all completed: `v1.1.1` released 2026-09-19 at linter `ac0a45f`, `v1` moved to it, and the release published to the GitHub Marketplace; Glama author claim posted on awesome-mcp-servers #13313 before its merge.
