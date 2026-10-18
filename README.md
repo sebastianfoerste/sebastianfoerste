@@ -29,7 +29,7 @@ All examples are synthetic, except the register snapshots and the linter's pilot
 
 ## Background
 
-Since [year] I have recruited [N] lateral partners for gunnercooke Germany.
+Since 2024 I have recruited 25 lateral partners for gunnercooke Germany.
 
 Admitted in Germany in 2012. Trained at Hengeler Mueller, Freshfields Bruckhaus Deringer, and Cleary Gottlieb. Earlier, Python NLP pipelines as a data scientist at Dudenverlag.
 
