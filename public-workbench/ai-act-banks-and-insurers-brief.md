@@ -11,12 +11,12 @@ Two high-risk uses in Annex III to the AI Act concern the core business of banks
 - evaluating the creditworthiness of natural persons or establishing their credit score, other than to detect financial fraud;
 - risk assessment and pricing in relation to natural persons in life and health insurance.
 
-Other Annex III uses, such as recruitment and worker management, reach any bank or insurer as they reach any employer.
+Other Annex III uses, such as recruitment and worker management, reach banks and insurers as employers.
 
-Article 113 sets the dates (consolidated text of 27 July 2026, cited throughout):
+Article 113 sets the dates, as amended by the Digital Omnibus on AI, Regulation (EU) 2026/1744 (consolidated text of 27 July 2026, cited throughout):
 
 - **2 August 2026:** the general application date.
-- **2 December 2027:** the classification rules, requirements and provider and deployer obligations in Chapter III, Sections 1 to 3, apply to Annex III systems.
+- **2 December 2027:** the classification rules, requirements and provider and deployer obligations in Chapter III, Sections 1 to 3, apply to Annex III systems (2 August 2028 for Annex I systems).
 - **Already applying:** AI literacy measures for those operating or using AI systems for the firm (Article 4), and the provider duty to ensure that people interacting directly with an AI system are told so, unless it is obvious (Article 50(1)).
 
 ## What the Act requires
@@ -45,24 +45,27 @@ Article 113 sets the dates (consolidated text of 27 July 2026, cited throughout)
 3. **Change rule.** Decide who judges whether each design change is significant, on what evidence, and record it.
 4. **Governance map.** Map the quality management duty to existing governance; plan the three excepted items.
 5. **Impact assessment.** Draft one for a live use and test it with those who would sign it.
-6. **People and assistants.** Name oversight staff, record AI literacy measures, test customer-facing assistants against Article 50(1).
+6. **People and assistants.** Name oversight staff, record AI literacy measures, test customer-facing assistants against Article 50(1) and (2).
 
 ## Why this is a case for Claude
 
 Most of that list is drafting, which a language model can help with if a tool that cites the law supplies the rules and named people decide.
 
-I have built the tool side. [eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier) takes a structured system profile and returns the risk tier, cited obligations, application dates and a review status per item. For its synthetic example of a bank deploying a third-party credit-scoring model, it returns high-risk under Annex III point 5(b), lists Articles 26 and 27 and flags the impact assessment for review. [eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp) exposes that classifier to an AI assistant through the Model Context Protocol (MCP) and labels each classification result as a candidate pending human legal review.
+I have built the tool side. [eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier) takes a structured system profile and returns the risk tier, cited obligations, application dates (some later than this brief's; see Sources) and a review status per item. For its synthetic example of a bank deploying a third-party credit-scoring model, it returns high-risk under Annex III point 5(b), lists Articles 26 and 27 and flags the impact assessment for review. [eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp) exposes that classifier to an AI assistant through the Model Context Protocol (MCP) and labels each classification result as a candidate pending human legal review.
 
 Anthropic open-sourced MCP in November 2024 as "a new standard for connecting AI assistants to the systems where data lives", with local MCP server support in the Claude Desktop apps ([Anthropic](https://www.anthropic.com/news/model-context-protocol)). In a bank, Claude could read the documentation, fill the classifier's profile, call the tool and draft the inventory entry around a result it quotes with its source. Before the firm relies on or files any of it, a compliance officer should confirm the facts and the legal characterisation, and counsel should sign off.
 
 Using a general-purpose AI system to credit-score individuals or price life or health policies is a different case: a firm that changes such a system's intended purpose so that it becomes high-risk is treated as its provider (Article 25(1)(c)). Under the Digital Operational Resilience Act (DORA), a bank or insurer in scope that uses information and communication technology (ICT) services under contractual arrangements remains fully responsible for compliance with, and the discharge of, all obligations under DORA and applicable financial services law (Article 28(1)(a)); a model provider will normally belong in the existing ICT third-party risk process.
 
-As of 15 October 2026
+As of 18 October 2026
 
 ## Sources
 
-- Regulation (EU) 2024/1689 (Artificial Intelligence Act), cited in its consolidated text of 27 July 2026. The ELI identifies the act as published on 12 July 2024, before later amendments: http://data.europa.eu/eli/reg/2024/1689/oj. Provisions relied on beyond those cited in the text: Annex III, point 4; Article 3(3), (4), (11) and (52); Article 6(2); Article 16(a), (c), (f) and (i); Article 17(1)(g) to (i); Article 26(1), (2), (5), (6) and (11); Article 27(1) to (3); Article 43(2); Article 74(7); Article 79(1); Article 99(6) and (6a); Article 113, second paragraph and third paragraph, points (a) and (c).
+- Regulation (EU) 2024/1689 (Artificial Intelligence Act), cited in its consolidated text of 27 July 2026 (CELEX 02024R1689-20260727): https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng. The ELI of the act as published on 12 July 2024, before later amendments: http://data.europa.eu/eli/reg/2024/1689/oj. Provisions relied on beyond those cited in the text: Annex III, point 4; Article 3(3), (4), (11) and (52); Article 6(2); Article 16(a), (c), (f) and (i); Article 17(1)(g) to (i); Article 26(1), (2), (5), (6) and (11); Article 27(1) to (3); Article 43(2); Article 74(7); Article 75(1), first subparagraph, point (a)(iii); Article 79(1); Article 99(6) and (6a); Article 113, second paragraph and third paragraph, points (a) and (c).
+- Regulation (EU) 2026/1744 of 8 July 2026 (Digital Omnibus on AI), OJ L, 2026/1744, 24.7.2026, in force on 27 July 2026, the third day after publication (Article 4); Article 1, points (4) (Article 3, point (14b)), (5) (Article 4), (31) (Article 75), (38) (Article 99(6a)), (39) (Article 111(2) and (4)) and (40) (Article 113, third paragraph, points (a) and (c)). http://data.europa.eu/eli/reg/2026/1744/oj
+- Council of the EU, press release on the final adoption of the Digital Omnibus on AI, 29 June 2026. https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/
+- European Parliament, "AI Act: EP approves simplification measures and 'nudifier' app ban", 16 June 2026 (ref. 20260611IPR45207). It says "Obligations on high-risk AI systems will apply" from the new dates; the operative text, Article 113, third paragraph, point (c), moves only Chapter III, Sections 1 to 3. https://www.europarl.europa.eu/news/en/press-room/20260611IPR45207/
 - Regulation (EU) 2016/679 (General Data Protection Regulation), Article 4(4). http://data.europa.eu/eli/reg/2016/679/oj
 - Regulation (EU) 2022/2554 (Digital Operational Resilience Act), Article 28(1)(a). http://data.europa.eu/eli/reg/2022/2554/oj
 - Anthropic, "Introducing the Model Context Protocol", 25 November 2024. https://www.anthropic.com/news/model-context-protocol
-- The classifier's [regulatory claim ledger](https://github.com/sebastianfoerste/eu-ai-act-classifier/blob/e1eda98b8e73803973a9445d981f291c5082ce16/docs/REGULATORY_CLAIM_LEDGER.md) at commit e1eda98, which records the application dates the classifier encodes and the items that still need review. The ledger and the classifier's timeline also attribute those dates to an amending regulation; this brief cites the consolidated text only.
+- The classifier's [regulatory claim ledger](https://github.com/sebastianfoerste/eu-ai-act-classifier/blob/e1eda98b8e73803973a9445d981f291c5082ce16/docs/REGULATORY_CLAIM_LEDGER.md) at commit e1eda98, which records the application dates the classifier encodes and the items that still need review. The ledger and the classifier's timeline attribute the 2 December 2027 and 2 August 2028 dates to Regulation (EU) 2026/1744, as in Article 113, third paragraph, point (c). The ledger also records that the classifier's obligation graph gives those dates to its Article 40 to 44, 47 to 49, 72 and 73 items, which point (c) does not cover, and that the timeline does not encode the 2 December 2026 date in point (a); this brief does not rely on the classifier's dates.
