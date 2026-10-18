@@ -13,13 +13,13 @@ German-qualified lawyer, partner at gunnercooke, former NLP data scientist. My p
 - **[SaaS contracting and DPA playbook](https://github.com/sebastianfoerste/sebastianfoerste/blob/main/public-workbench/saas-contracting-and-dpa-playbook.md)**: MSA deviations, DPAs and transfers, AI model-provider terms and open-source licences.
 - **[Crypto partnership agreements playbook](https://github.com/sebastianfoerste/sebastianfoerste/blob/main/public-workbench/crypto-partnership-agreements-playbook.md)**: an exchange's listing, referral, staking and API agreements.
 
-## Regulatory depth
+## Regulatory toolkit
 
-- **[micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)**: checks a white paper draft against Annex I to III of MiCAR and cites each gap. Rules fail closed. [Playground](https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/) or [GitHub Action](https://github.com/marketplace/actions/micar-whitepaper-lint).
+- **[micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)**: checks a white paper draft against Annex I to III of MiCAR and cites each gap. Rules fail closed. [Playground](https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/), [GitHub Action](https://github.com/marketplace/actions/micar-whitepaper-lint).
 - **[eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier)**: AI Act risk-tier triage with cited obligations and the high-risk application dates in Article 113 of the consolidated text of 27 July 2026. [Playground](https://sebastianfoerste.github.io/eu-ai-act-classifier/playground/).
 - **[dpa-and-data-transfer-review](https://github.com/sebastianfoerste/dpa-and-data-transfer-review)**: cited GDPR Art. 28 and Chapter V checks.
 - **[micar-register-observatory](https://github.com/sebastianfoerste/micar-register-observatory)**: weekly snapshots of the ESMA interim MiCAR register.
-- **[eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp)**: MCP server for the register data, linter and classifier; lint and classification results are marked as candidates pending human review.
+- **[eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp)**: MCP server giving AI agents cited grounding in EU regulation through the register data, linter and classifier; lint and classification results are marked as candidates pending human review.
 - **[awesome-eu-fintech-regulation](https://github.com/sebastianfoerste/awesome-eu-fintech-regulation)**: primary sources for EU fintech regulation.
 - **[AI Act brief for banks and insurers](https://github.com/sebastianfoerste/sebastianfoerste/blob/main/public-workbench/ai-act-banks-and-insurers-brief.md)**: credit scoring and life and health insurance risk assessment and pricing, with a proposed, human-reviewed role for Claude.
 
