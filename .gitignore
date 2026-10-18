@@ -1,4 +1,2 @@
 .DS_Store
 .gstack/
-.pytest_cache/
-__pycache__/
