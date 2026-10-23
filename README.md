@@ -15,7 +15,7 @@ German-qualified lawyer, partner at gunnercooke, former NLP data scientist. My p
 
 ## Regulatory toolkit
 
-- **[micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)**: checks a white paper draft against Annex I to III of MiCAR and cites candidate gaps. Rules fail closed. [Playground](https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/).
+- **[micar-whitepaper-linter](https://github.com/sebastianfoerste/micar-whitepaper-linter)**: checks a white paper draft against Annex I to III of MiCAR and cites candidate gaps. [Playground](https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/).
 - **[eu-ai-act-classifier](https://github.com/sebastianfoerste/eu-ai-act-classifier)**: AI Act risk-tier triage with cited obligations and the high-risk application dates in Article 113 of the consolidated text of 27 July 2026. [Playground](https://sebastianfoerste.github.io/eu-ai-act-classifier/playground/).
 - **[dpa-and-data-transfer-review](https://github.com/sebastianfoerste/dpa-and-data-transfer-review)**: cited GDPR Art. 28 and Chapter V checks.
 - **[micar-register-observatory](https://github.com/sebastianfoerste/micar-register-observatory)**: weekly snapshots of the ESMA interim MiCAR register.
@@ -25,7 +25,7 @@ German-qualified lawyer, partner at gunnercooke, former NLP data scientist. My p
 
 ## Boundaries
 
-All examples are synthetic, except register data and the linter's pilot study, which use public sources. Prototypes with source provenance and audit trails, not claims of production deployment. This is not legal advice; no tool permits consequential external action without human review. AI assisted coding and drafting; rule taxonomies, citations, answer sets and scope limits are my judgment.
+All examples are synthetic, except MiCAR register data and the linter's pilot study, which use public sources. Prototypes with source provenance and audit trails, not claims of production deployment. This is not legal advice; no tool permits consequential external action without human review. AI assisted coding, drafting and research; rule taxonomies, citations, answer sets and scope limits are my judgment.
 
 ## Background
 
