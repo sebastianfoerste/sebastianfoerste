@@ -57,7 +57,7 @@ Anthropic open-sourced MCP in November 2024 as "a new standard for connecting AI
 
 Using a general-purpose AI system to credit-score individuals or price life or health policies is a different case: a firm that changes such a system's intended purpose so that it becomes high-risk is treated as its provider (Article 25(1)(c)). Under the Digital Operational Resilience Act (DORA), a bank or insurer in scope that uses information and communication technology (ICT) services under contractual arrangements remains fully responsible for compliance with, and the discharge of, all obligations under DORA and applicable financial services law (Article 28(1)(a)); a model provider will normally belong in the existing ICT third-party risk process.
 
-As of 18 October 2026
+As of 23 October 2026
 
 ## Sources
 
