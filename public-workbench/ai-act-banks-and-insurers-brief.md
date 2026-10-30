@@ -1,4 +1,4 @@
-# The AI Act's high-risk timetable for banks and insurers, and why the compliance work is a case for Claude
+# What the AI Act's high-risk rules require of banks and insurers, and when
 
 *Executive brief for chief operating officers, chief risk officers and general counsel, by Sebastian Förste. Drafted with AI assistance (Claude). Independent work, not reviewed or endorsed by Anthropic. Not legal advice.*
 
