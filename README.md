@@ -8,7 +8,7 @@ German-qualified lawyer, partner at gunnercooke, former NLP data scientist. My p
 
 ## Enable and measure
 
-- **[legal-ai-adoption-dashboard](https://github.com/sebastianfoerste/legal-ai-adoption-dashboard)**: adoption blockers and a product feedback queue. [Live demo](https://legal-ai-adoption-dashboard.vercel.app).
+- **[legal-ai-adoption-dashboard](https://github.com/sebastianfoerste/legal-ai-adoption-dashboard)**: adoption blockers and a product feedback queue.
 - **[legal-function-operating-system](https://github.com/sebastianfoerste/legal-function-operating-system)**: intake, routing and approvals, with a supervised agent behind a versioned control contract. [Artifacts](https://sebastianfoerste.github.io/legal-function-operating-system/).
 - **[SaaS contracting and DPA playbook](https://github.com/sebastianfoerste/sebastianfoerste/blob/main/public-workbench/saas-contracting-and-dpa-playbook.md)**: MSA deviations, DPAs and transfers, AI model-provider terms and open-source licences.
 - **[Crypto partnership agreements playbook](https://github.com/sebastianfoerste/sebastianfoerste/blob/main/public-workbench/crypto-partnership-agreements-playbook.md)**: an exchange's listing, referral, staking and API agreements.
