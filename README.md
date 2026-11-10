@@ -8,7 +8,7 @@ German-qualified lawyer, partner at gunnercooke, former NLP data scientist. My p
 
 ## Enable and measure
 
-- **[legal-ai-adoption-dashboard](https://github.com/sebastianfoerste/legal-ai-adoption-dashboard)**: adoption blockers and a product feedback queue. [Live demo](https://legal-ai-adoption-dashboard.vercel.app).
+- **[legal-ai-adoption-dashboard](https://github.com/sebastianfoerste/legal-ai-adoption-dashboard)**: adoption blockers and a product feedback queue.
 - **[legal-function-operating-system](https://github.com/sebastianfoerste/legal-function-operating-system)**: intake, routing and approvals, with a supervised agent behind a versioned control contract. [Artifacts](https://sebastianfoerste.github.io/legal-function-operating-system/).
 - **[SaaS contracting and DPA playbook](https://github.com/sebastianfoerste/sebastianfoerste/blob/main/public-workbench/saas-contracting-and-dpa-playbook.md)**: MSA deviations, DPAs and transfers, AI model-provider terms and open-source licences.
 - **[Crypto partnership agreements playbook](https://github.com/sebastianfoerste/sebastianfoerste/blob/main/public-workbench/crypto-partnership-agreements-playbook.md)**: an exchange's listing, referral, staking and API agreements.
@@ -21,7 +21,7 @@ German-qualified lawyer, partner at gunnercooke, former NLP data scientist. My p
 - **[micar-register-observatory](https://github.com/sebastianfoerste/micar-register-observatory)**: weekly snapshots of the ESMA interim MiCAR register.
 - **[eu-reg-mcp](https://github.com/sebastianfoerste/eu-reg-mcp)**: MCP server giving AI agents cited grounding in EU regulation through the register data, linter and classifier; lint and classification results are marked as candidates pending human review.
 - **[awesome-eu-fintech-regulation](https://github.com/sebastianfoerste/awesome-eu-fintech-regulation)**: primary sources for EU fintech regulation.
-- **[AI Act brief for banks and insurers](https://github.com/sebastianfoerste/sebastianfoerste/blob/main/public-workbench/ai-act-banks-and-insurers-brief.md)**: credit scoring and life and health insurance risk assessment and pricing, with a proposed, human-reviewed role for Claude.
+- **[AI Act brief for banks and insurers](https://github.com/sebastianfoerste/sebastianfoerste/blob/main/public-workbench/ai-act-banks-and-insurers-brief.md)**: which high-risk rules apply to credit scoring of natural persons and to life and health insurance risk assessment and pricing, and when.
 
 ## Boundaries
 
